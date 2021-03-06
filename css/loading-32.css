@@ -1,0 +1,696 @@
+/* screen - loading-32 */
+
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+.karla-bold-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-bold-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-normal-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-dove-gray-14px {
+  color: var(--dove-gray);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-pixie-powder-14px {
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-star-dust-14px {
+  color: var(--star-dust);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-white-16px {
+  color: var(--white);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.loading-32 {
+  background-color: transparent;
+  height: 812px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.loading-32 .battery-e7uhAr {
+  --z-index: 0;
+  background-color: transparent;
+  height: 11px;
+  left: 43px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+.loading-32 .border-PqAHMl {
+  --z-index: 0;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1.0);
+  border-radius: 2.6666667461395264px;
+  height: 11px;
+  left: 0px;
+  opacity: 0.35;
+  position: absolute;
+  top: 0px;
+  width: 22px;
+}
+.loading-32 .cap-PqAHMl {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(../img/cap@2x.svg);
+  background-size: 100% 100%;
+  height: 5px;
+  left: 23px;
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  width: 2px;
+}
+.loading-32 .capacity-PqAHMl {
+  --z-index: 2;
+  background-color: rgba(255,255,255,1.0);
+  border-radius: 1.3333333730697632px;
+  height: 7px;
+  left: 2px;
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  width: 18px;
+}
+.loading-32 .cellular-connection-e7uhAr {
+  --z-index: 2;
+  background-color: transparent;
+  background-image: url(../img/cellular-connection-28@2x.svg);
+  background-size: 100% 100%;
+  height: 12px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 18px;
+}
+.loading-32 .container-UILJPw {
+  --z-index: 0;
+  background-color: transparent;
+  height: 39px;
+  left: -1px;
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  width: 377px;
+}
+.loading-32 .container-hRp5Ot {
+  --z-index: 0;
+  background-color: transparent;
+  height: 50px;
+  left: -1px;
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  width: 377px;
+}
+.loading-32 .entering-store-C61RwL {
+  --z-index: 5;
+  background-color: transparent;
+  color: rgba(255,255,255,1.0);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 24px;
+  left: 65px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  top: 456px;
+  width: 246px;
+}
+.loading-32 .home-indicator-C61RwL {
+  --z-index: 3;
+  background-color: transparent;
+  height: 37px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 775px;
+  width: 375px;
+}
+.loading-32 .indicator-UILJPw {
+  --z-index: 1;
+  background-color: rgba(0,0,0,1.0);
+  border-radius: 3px;
+  height: 8px;
+  left: 119px;
+  opacity: 1;
+  position: absolute;
+  top: 23px;
+  width: 137px;
+}
+.loading-32 .loading-32-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/loading-25@1x.svg);
+  background-size: 100% 100%;
+  height: 812px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 375px;
+}
+.loading-32 .loading-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  height: 15px;
+  left: 188px;
+  opacity: 1;
+  position: absolute;
+  top: 321px;
+  width: 37px;
+}
+.loading-32 .loading-VMr6Om {
+  --z-index: 2;
+  background-color: transparent;
+  height: 4px;
+  left: 188px;
+  opacity: 1;
+  position: absolute;
+  top: 321px;
+  width: 20px;
+}
+.loading-32 .loading-fill-1hMxwT {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/loading-fill-10@2x.svg);
+  background-size: 100% 100%;
+  height: 10px;
+  left: -3px;
+  opacity: 1;
+  position: absolute;
+  top: -3px;
+  width: 26px;
+}
+.loading-32 .loading-fill-UZiVuo {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/loading-fill-6@2x.svg);
+  background-size: 100% 100%;
+  height: 21px;
+  left: -3px;
+  opacity: 1;
+  position: absolute;
+  top: -3px;
+  width: 43px;
+}
+.loading-32 .phone-indicator-black-BJ28qq {
+  --z-index: 0;
+  background-color: transparent;
+  height: 37px;
+  left: 0px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  width: 375px;
+}
+.loading-32 .poshmark-logo-white-36-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  background-image: url(../img/poshmark-logo-white-36-7@2x.svg);
+  background-size: 100% 100%;
+  height: 56px;
+  left: 163px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 345px;
+  width: 50px;
+}
+.loading-32 .right-side-hRp5Ot {
+  --z-index: 1;
+  background-color: transparent;
+  height: 13px;
+  left: 294px;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 18px;
+  width: 68px;
+}
+.loading-32 .span0-5CjaE0 {
+  font-style: normal;
+}
+.loading-32 .span1-5CjaE0 {
+  font-style: normal;
+  letter-spacing: 0.00px;
+}
+.loading-32 .status-bar-ASWxeQ {
+  --z-index: 0;
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  width: 375px;
+}
+.loading-32 .status-bar-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 375px;
+}
+.loading-32 .time-hRp5Ot {
+  --z-index: 2;
+  background-color: transparent;
+  color: rgba(255,255,255,1.0);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 19px;
+  line-height: normal;
+  opacity: 1;
+  position: absolute;
+  top: 13px;
+  width: auto;
+}
+.loading-32 .wifi-e7uhAr {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(../img/wifi-19@2x.svg);
+  background-size: 100% 100%;
+  height: 12px;
+  left: 22px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+.sfprodisplay-regular-normal-white-15px {
+  color: var(--white);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sfprotext-regular-normal-black-22-5px {
+  color: var(--black);
+  font-family: 'SF Pro Text-Regular', Helvetica;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --bon-jour: rgba(223,223,223,1.0);
+  --chicago: rgba(87,87,87,1.0);
+  --coconut: rgba(252,252,254,1.0);
+  --dove-gray: rgba(111,111,111,1.0);
+  --pixie-powder: rgba(53,22,138,1.0);
+  --star-dust: rgba(157,157,157,1.0);
+  --white: rgba(255,255,255,1.0);
+}
+/* screen - loading-35 */
+
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+.karla-bold-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-bold-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-normal-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-dove-gray-14px {
+  color: var(--dove-gray);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-pixie-powder-14px {
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-star-dust-14px {
+  color: var(--star-dust);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-white-16px {
+  color: var(--white);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.loading-35 {
+  background-color: transparent;
+  height: 812px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.loading-35 .battery-e7uhAr {
+  --z-index: 0;
+  background-color: transparent;
+  height: 11px;
+  left: 43px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+.loading-35 .border-PqAHMl {
+  --z-index: 0;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1.0);
+  border-radius: 2.6666667461395264px;
+  height: 11px;
+  left: 0px;
+  opacity: 0.35;
+  position: absolute;
+  top: 0px;
+  width: 22px;
+}
+.loading-35 .cap-PqAHMl {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(../img/cap@2x.svg);
+  background-size: 100% 100%;
+  height: 5px;
+  left: 23px;
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  width: 2px;
+}
+.loading-35 .capacity-PqAHMl {
+  --z-index: 2;
+  background-color: rgba(255,255,255,1.0);
+  border-radius: 1.3333333730697632px;
+  height: 7px;
+  left: 2px;
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  width: 18px;
+}
+.loading-35 .cellular-connection-e7uhAr {
+  --z-index: 2;
+  background-color: transparent;
+  background-image: url(../img/cellular-connection-28@2x.svg);
+  background-size: 100% 100%;
+  height: 12px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 18px;
+}
+.loading-35 .container-UILJPw {
+  --z-index: 0;
+  background-color: transparent;
+  height: 39px;
+  left: -1px;
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  width: 377px;
+}
+.loading-35 .container-hRp5Ot {
+  --z-index: 0;
+  background-color: transparent;
+  height: 50px;
+  left: -1px;
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  width: 377px;
+}
+.loading-35 .entering-store-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  color: rgba(255,255,255,1.0);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 24px;
+  left: 65px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  top: 456px;
+  width: 246px;
+}
+.loading-35 .home-indicator-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  height: 37px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 775px;
+  width: 375px;
+}
+.loading-35 .indicator-UILJPw {
+  --z-index: 1;
+  background-color: rgba(0,0,0,1.0);
+  border-radius: 3px;
+  height: 8px;
+  left: 119px;
+  opacity: 1;
+  position: absolute;
+  top: 23px;
+  width: 137px;
+}
+.loading-35 .loading-35-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/loading-25@1x.svg);
+  background-size: 100% 100%;
+  height: 812px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 375px;
+}
+.loading-35 .loading-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  height: 15px;
+  left: 188px;
+  opacity: 1;
+  position: absolute;
+  top: 321px;
+  width: 37px;
+}
+.loading-35 .loading-fill-UZiVuo {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/loading-fill-15@2x.svg);
+  background-size: 100% 100%;
+  height: 21px;
+  left: -3px;
+  opacity: 1;
+  position: absolute;
+  top: -3px;
+  width: 43px;
+}
+.loading-35 .phone-indicator-black-BJ28qq {
+  --z-index: 0;
+  background-color: transparent;
+  height: 37px;
+  left: 0px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  width: 375px;
+}
+.loading-35 .poshmark-logo-white-36-C61RwL {
+  --z-index: 3;
+  background-color: transparent;
+  background-image: url(../img/poshmark-logo-white-36-7@2x.svg);
+  background-size: 100% 100%;
+  height: 56px;
+  left: 163px;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 345px;
+  width: 50px;
+}
+.loading-35 .right-side-hRp5Ot {
+  --z-index: 1;
+  background-color: transparent;
+  height: 13px;
+  left: 294px;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 18px;
+  width: 68px;
+}
+.loading-35 .span0-5CjaE0 {
+  font-style: normal;
+}
+.loading-35 .span1-5CjaE0 {
+  font-style: normal;
+  letter-spacing: 0.00px;
+}
+.loading-35 .status-bar-ASWxeQ {
+  --z-index: 0;
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  width: 375px;
+}
+.loading-35 .status-bar-C61RwL {
+  --z-index: 5;
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 375px;
+}
+.loading-35 .time-hRp5Ot {
+  --z-index: 2;
+  background-color: transparent;
+  color: rgba(255,255,255,1.0);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 19px;
+  line-height: normal;
+  opacity: 1;
+  position: absolute;
+  top: 13px;
+  width: auto;
+}
+.loading-35 .wifi-e7uhAr {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(../img/wifi-19@2x.svg);
+  background-size: 100% 100%;
+  height: 12px;
+  left: 22px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+.sfprodisplay-regular-normal-white-15px {
+  color: var(--white);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sfprotext-regular-normal-black-22-5px {
+  color: var(--black);
+  font-family: 'SF Pro Text-Regular', Helvetica;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --bon-jour: rgba(223,223,223,1.0);
+  --chicago: rgba(87,87,87,1.0);
+  --coconut: rgba(252,252,254,1.0);
+  --dove-gray: rgba(111,111,111,1.0);
+  --pixie-powder: rgba(53,22,138,1.0);
+  --star-dust: rgba(157,157,157,1.0);
+  --white: rgba(255,255,255,1.0);
+}

@@ -1,0 +1,2736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/search.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Manrope:400,500,800,700,600|Karla:400,700");
+
+      @font-face {
+        font-family: "SF Pro Display-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5b7d556a58482d00094a3c58/SF-Pro-Display-Regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "SF Pro Text-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/6008a098639e61868d22fa86/fonts/sf-pro-text-regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "SF Pro Display-Semibold";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5ad84aa54ce72e000be60463/SF-Pro-Display-Semibold.otf")
+          format("opentype");
+      }
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0">
+    <input type="hidden" id="anPageName" name="page" value="search" />
+    <div class="container-center-horizontal">
+      <div
+        class="search auto-animated screen"
+        data-page="search"
+        data-screens="offer-modal,individual-product-page,category-page-mens,camera-access-permission-screen,sell-screen,allhomepage,my-bag-progress-started,shopping-bag,my-bag-form-filled,alerts-page,profile-page,brands-page,recent-views-page-1,mens-shoes,my-bag-shipping-info-screen,recent-views-page,make-an-offer,make-an-offer-2,search"
+      >
+        <div class="group-C61RwL">
+          <div class="vector-NOXmfT"></div>
+          <div class="vector-E582nk"></div>
+        </div>
+        <div
+          class="icon-dropdown-C61RwL"
+          onclick="Lib.autoanim_redirect('sell-screen,loading-32%23allhomepage,,ease-in,300.00001192092896;my-bag-progress-started,loading-32%23shopping-bag,,ease-in,300.00001192092896;shopping-bag,loading-32%23individual-product-page,,ease-in,300.00001192092896;my-bag-form-filled,loading-32%23shopping-bag,,ease-in,300.00001192092896;brands-page,javascript%3Ahistory.back%28%29,,,;recent-views-page-1,javascript%3Ahistory.back%28%29,,,;mens-shoes,javascript%3Ahistory.back%28%29,,,;my-bag-shipping-info-screen,loading-32%23my-bag-form-filled,,,;recent-views-page,javascript%3Ahistory.back%28%29,,,;make-an-offer,loading-32%23individual-product-page,,,;make-an-offer-2,loading-32%23individual-product-page,,ease-in,300.00001192092896', event)"
+        >
+          <div class="vector-74sJxh"></div>
+        </div>
+        <div class="x97-C61RwL valign-text-middle">$97</div>
+        <div class="rectangle-403-C61RwL"></div>
+        <div
+          class="button-primary-default-C61RwL"
+          onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23shopping-bag,,,;shopping-bag,loading-32%23my-bag-progress-started,,ease-in,300.00001192092896;my-bag-form-filled,loading-32%23my-bag-shipping-info-screen,,ease-in,300.00001192092896;make-an-offer-2,javascript%3AShowOverlay%28%27loading-32%27%2C%20%27animate-appear%27%29%3B,,,', event)"
+        >
+          <div
+            class="button-primary-default-GsrA0Q"
+            onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23shopping-bag,,,;shopping-bag,loading-32%23my-bag-progress-started,,ease-in,300.00001192092896;my-bag-form-filled,loading-32%23my-bag-shipping-info-screen,,ease-in,300.00001192092896;make-an-offer-2,javascript%3AShowOverlay%28%27loading-32%27%2C%20%27animate-appear%27%29%3B,,,', event)"
+          ></div>
+          <div class="button-text-i4013121981537-GsrA0Q">Add to Bag</div>
+          <div class="button-text-i368242981537-GsrA0Q">Checkout</div>
+          <div class="button-text-i368244981537-GsrA0Q">Next</div>
+          <div class="button-text-i39355981537-GsrA0Q">Logout</div>
+          <div class="button-text-i368254981537-GsrA0Q">Make an offer</div>
+        </div>
+        <div class="mens-recents-C61RwL">
+          <div class="rectangle-363-hrxfHF"></div>
+          <div class="rectangle-364-hrxfHF"></div>
+          <div class="rectangle-365-hrxfHF"></div>
+          <div class="rectangle-401-hrxfHF"></div>
+          <div class="group-1549-hrxfHF">
+            <div class="ellipse-293-wIWDRz"></div>
+            <div class="vector-wIWDRz"></div>
+          </div>
+          <div class="group-1550-hrxfHF">
+            <div class="ellipse-294-wvWnZd"></div>
+            <div class="vector-wvWnZd"></div>
+          </div>
+          <div class="group-1553-hrxfHF"></div>
+          <div class="group-1551-hrxfHF">
+            <div class="ellipse-294-xKf4yT"></div>
+            <div class="vector-xKf4yT"></div>
+          </div>
+          <div class="group-1552-hrxfHF">
+            <div class="ellipse-294-QlUdce"></div>
+            <div class="vector-QlUdce"></div>
+          </div>
+          <div class="jeans-hrxfHF valign-text-middle">Jeans</div>
+          <div class="hardly-used-af1-hrxfHF valign-text-middle">Hardly Used AF1</div>
+          <div class="blue-nikes-size-10-hrxfHF valign-text-middle">Blue Nikes Size 10</div>
+          <div class="red-beanie-nwt-hrxfHF valign-text-middle">Red Beanie NWT</div>
+          <div class="x1000-hrxfHF valign-text-middle">$10.00</div>
+          <div class="x2000-hrxfHF valign-text-middle">$20.00</div>
+          <div class="x1800-hrxfHF valign-text-middle">$18.00</div>
+          <div class="x500-hrxfHF valign-text-middle">$5.00</div>
+          <div class="ellipse-5-hrxfHF"></div>
+          <div class="ellipse-6-hrxfHF"></div>
+          <div class="ellipse-7-hrxfHF"></div>
+          <div class="x85-hrxfHF valign-text-middle">$85</div>
+          <div class="x70-hrxfHF valign-text-middle">$70</div>
+          <div class="x100-hrxfHF valign-text-middle">$100</div>
+          <div class="x25-hrxfHF valign-text-middle">$25</div>
+        </div>
+        <div class="vector-10-C61RwL"></div>
+        <div class="see-all-C61RwL valign-text-middle">See all</div>
+        <div class="take-another-look-C61RwL valign-text-middle">Take another look</div>
+        <div class="vector-C61RwL"></div>
+        <div class="group-1648-C61RwL">
+          <div class="rectangle-383-cLltxm"></div>
+          <div class="group-1541-cLltxm">
+            <div class="group-1526-EAcCUK">
+              <div class="rectangle-350-DAPGzK"></div>
+              <div class="title-DAPGzK valign-text-middle">Home</div>
+              <div class="title-bY44nk valign-text-middle">Sell</div>
+              <div class="title-916G47 valign-text-middle">Alerts</div>
+              <div class="title-AyIeqn valign-text-middle">Profile</div>
+            </div>
+            <div class="frame-4-EAcCUK">
+              <div class="group-1519-NZkbYo">
+                <div class="group-1517-UszTF1">
+                  <div
+                    class="bxbx-home-heart-daYApu"
+                    onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23allhomepage,,,;brands-page,loading-32%23allhomepage,,,;recent-views-page-1,loading-32%23allhomepage,,,;mens-shoes,loading-32%23allhomepage,,,', event)"
+                  >
+                    <div class="vector-hrsyxt"></div>
+                    <div class="vector-WAZpPB"></div>
+                  </div>
+                  <div class="rinotification-4-line-daYApu">
+                    <div class="vector-NPG2Vq"></div>
+                  </div>
+                  <div class="ggprofile-daYApu">
+                    <div class="group-AqKu4X">
+                      <div class="vector-xn4FxT"></div>
+                      <div class="vector-G9hRxV"></div>
+                    </div>
+                  </div>
+                  <div class="vector-daYApu"></div>
+                </div>
+              </div>
+              <div class="ellipse-411-NZkbYo"></div>
+              <div class="title-NZkbYo valign-text-middle">3</div>
+            </div>
+          </div>
+          <div class="home-indicator-cLltxm">
+            <div class="phone-indicator-black-VTDRpJ">
+              <div class="container-ZUq6iz"></div>
+              <div class="indicator-ZUq6iz"></div>
+            </div>
+          </div>
+          <div
+            class="rectangle-1963-cLltxm"
+            onclick="Lib.autoanim_redirect('shopping-bag,loading-32%23allhomepage,,,;alerts-page,loading-32%23allhomepage,,,;profile-page,loading-32%23allhomepage,,,;brands-page,loading-32%23allhomepage,,,;mens-shoes,loading-32%23allhomepage,,,', event)"
+          ></div>
+          <div class="rectangle-1964-cLltxm"></div>
+          <div
+            class="rectangle-1965-cLltxm"
+            onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23alerts-page,,ease-in,300.00001192092896;allhomepage,loading-32%23alerts-page,,ease-in,300.00001192092896;shopping-bag,loading-32%23alerts-page,,ease-in,300.00001192092896;alerts-page,loading-32%23alerts-page,,ease-in,300.00001192092896;profile-page,loading-32%23alerts-page,,ease-in,300.00001192092896;brands-page,loading-32%23alerts-page,,ease-in,300.00001192092896;recent-views-page-1,loading-32%23alerts-page,,ease-in,300.00001192092896;mens-shoes,loading-32%23alerts-page,,ease-in,300.00001192092896', event)"
+          ></div>
+          <div
+            class="rectangle-1966-cLltxm"
+            onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23profile-page,,ease-in,300.00001192092896;allhomepage,loading-32%23profile-page,,ease-in,300.00001192092896;shopping-bag,loading-32%23profile-page,,ease-in,300.00001192092896;alerts-page,loading-32%23profile-page,,ease-in,300.00001192092896;profile-page,loading-32%23profile-page,,ease-in,300.00001192092896;brands-page,loading-32%23profile-page,,ease-in,300.00001192092896;recent-views-page-1,loading-32%23profile-page,,ease-in,300.00001192092896;mens-shoes,loading-32%23profile-page,,ease-in,300.00001192092896', event)"
+          ></div>
+          <div
+            class="rectangle-1967-cLltxm"
+            onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23camera-access-permission-screen,,ease-in,300.00001192092896;allhomepage,loading-32%23camera-access-permission-screen,,ease-out,300.00001192092896;shopping-bag,loading-32%23camera-access-permission-screen,,ease-in,300.00001192092896;alerts-page,loading-32%23camera-access-permission-screen,,ease-in,300.00001192092896;profile-page,loading-32%23camera-access-permission-screen,,ease-in,300.00001192092896;brands-page,loading-32%23camera-access-permission-screen,,ease-in,300.00001192092896;recent-views-page-1,loading-32%23camera-access-permission-screen,,ease-out,300.00001192092896;mens-shoes,loading-32%23camera-access-permission-screen,,,', event)"
+          ></div>
+        </div>
+        <div class="frame-3-C61RwL">
+          <div class="group-FY3HhL">
+            <div class="vector-0nLWnp"></div>
+          </div>
+          <div class="vector-FY3HhL"></div>
+        </div>
+        <div
+          class="poshmark-C61RwL valign-text-middle"
+          onclick="Lib.autoanim_redirect('individual-product-page,loading-32%23allhomepage,,,;alerts-page,loading-32%23allhomepage,,,;profile-page,loading-32%23allhomepage,,,;make-an-offer,loading-32%23allhomepage,,,;make-an-offer-2,loading-32%23allhomepage,,,', event)"
+        >
+          POSHMARK
+        </div>
+        <div class="rectangle-378-C61RwL"></div>
+        <div class="search-C61RwL valign-text-middle">Search</div>
+        <div class="status-bar-C61RwL">
+          <div class="status-bar-ASWxeQ">
+            <div class="container-hRp5Ot"></div>
+            <div class="right-side-hRp5Ot">
+              <div class="battery-e7uhAr">
+                <div class="border-PqAHMl"></div>
+                <div class="cap-PqAHMl"></div>
+                <div class="capacity-PqAHMl"></div>
+              </div>
+              <div class="wifi-e7uhAr"></div>
+              <div class="cellular-connection-e7uhAr"></div>
+            </div>
+            <div class="time-hRp5Ot"><span class="span0-5CjaE0">09:4</span><span class="span1-5CjaE0">6</span></div>
+            <div class="battery-hRp5Ot">
+              <div class="border-NZfiAq">
+                <div class="vector-1yhDCJ"></div>
+                <div class="vector-kvzqpa"></div>
+              </div>
+              <div class="cap-NZfiAq"></div>
+              <div class="capacity-NZfiAq"></div>
+            </div>
+            <div class="wifi-hRp5Ot"></div>
+            <div class="cellular-connection-hRp5Ot"></div>
+            <div class="time-style-hRp5Ot"><div class="x941-KRAbRt">9:41</div></div>
+          </div>
+          <div class="frame-ASWxeQ"></div>
+        </div>
+        <div class="find-exactly-wh-our-looking-for-C61RwL valign-text-middle">Find exactly what your looking for</div>
+        <div class="categories-C61RwL valign-text-middle">CATEGORIES</div>
+        <div class="mens-brands-C61RwL">
+          <div class="group-1554-boyeq0">
+            <div class="vans-icon-0-8npPwU"></div>
+          </div>
+          <div class="group-1553-boyeq0">
+            <div class="adidas-ag-icon-0-Vxsfbe"></div>
+          </div>
+          <div class="group-1555-boyeq0">
+            <div class="champion-icon-0-xe7TdC"></div>
+          </div>
+          <div class="group-1551-boyeq0">
+            <div class="rectangle-357-oTByU3"></div>
+            <div class="rectangle-358-oTByU3"></div>
+            <div class="frame-11-oTByU3">
+              <div class="group-1568-LnxVcE"></div>
+            </div>
+            <div class="frame-12-oTByU3">
+              <div class="vector-xCcvmD"></div>
+            </div>
+            <div class="frame-8-oTByU3">
+              <div class="group-1568-yL2ffB"></div>
+            </div>
+          </div>
+          <div class="louis-vuitton-logo-boyeq0">
+            <div class="x000000ff-z5L5Ox"></div>
+          </div>
+          <div class="frame-7-boyeq0">
+            <div class="layer1-XSoxWz">
+              <div class="path855-lvU51l"></div>
+              <div class="vector-lvU51l"></div>
+              <div class="vector-B9R9Bj"></div>
+              <div class="vector-HM7xfw"></div>
+              <div class="vector-KbelOO"></div>
+              <div class="vector-pNsViF"></div>
+            </div>
+          </div>
+        </div>
+        <div class="x200-C61RwL valign-text-middle">$200</div>
+        <div class="x200-VMr6Om valign-text-middle">$200</div>
+        <div class="mens-trending-C61RwL">
+          <div
+            class="rectangle-379-NgabnV"
+            onclick="Lib.autoanim_redirect('category-page-mens,loading-32%23individual-product-page,,ease-out,300.00001192092896', event)"
+          ></div>
+          <div class="rectangle-361-NgabnV"></div>
+          <div class="rectangle-401-NgabnV"></div>
+          <div class="work-set-never-worn-NgabnV valign-text-middle">Work Set Never Worn</div>
+          <div class="x17500-NgabnV valign-text-middle">$175.00</div>
+          <div class="x750-NgabnV valign-text-middle">$750</div>
+          <div class="x300-NgabnV valign-text-middle">$300</div>
+          <div class="group-1550-NgabnV">
+            <div class="ellipse-294-UKjIfl"></div>
+            <div class="vector-UKjIfl"></div>
+          </div>
+          <div class="group-1551-NgabnV">
+            <div class="ellipse-294-WxvjUw"></div>
+            <div class="vector-WxvjUw"></div>
+          </div>
+          <div class="group-1552-NgabnV">
+            <div class="ellipse-294-PVD11h"></div>
+            <div class="vector-PVD11h"></div>
+          </div>
+          <div class="talentless-t-shirt-NgabnV valign-text-middle">Talentless T-Shirt</div>
+          <div class="balenciaga-shoes-NgabnV valign-text-middle">Balenciaga shoes</div>
+          <div class="x4400-NgabnV valign-text-middle">$44.00</div>
+          <div class="x22500-NgabnV valign-text-middle">$225.00</div>
+          <div class="x97-NgabnV valign-text-middle">$97</div>
+          <div class="group-1553-NgabnV"></div>
+          <div class="ray-bans-new-NgabnV valign-text-middle">Ray bans NEW</div>
+          <div class="jimmy-choo-pumps-NgabnV valign-text-middle">Jimmy Choo Pumps</div>
+          <div class="x7000-NgabnV valign-text-middle">$70.00</div>
+          <div class="x350-NgabnV valign-text-middle">$350</div>
+          <div class="x200-NgabnV valign-text-middle">$200</div>
+        </div>
+        <div class="vector-5-C61RwL"></div>
+        <div class="vector-9-C61RwL"></div>
+        <div class="vector-11-C61RwL"></div>
+        <div class="see-all-VMr6Om valign-text-middle">See all</div>
+        <div
+          class="see-all-mzXdH9 valign-text-middle"
+          onclick="Lib.autoanim_redirect('allhomepage,loading-32%23brands-page,,,', event)"
+        >
+          See all
+        </div>
+        <div
+          class="see-all-QxM5SU valign-text-middle"
+          onclick="Lib.autoanim_redirect('allhomepage,loading-32%23recent-views-page-1,,ease-in,300.00001192092896', event)"
+        >
+          See all
+        </div>
+        <div class="see-all-2P4qUJ valign-text-middle">See all</div>
+        <div class="find-your-faves-C61RwL valign-text-middle">Find Your Faves</div>
+        <div class="suggestions-bas-d-on-your-style-C61RwL valign-text-middle">Suggestions based on your style</div>
+        <div class="trending-C61RwL valign-text-middle">TRENDING</div>
+        <div class="brands-C61RwL valign-text-middle">BRANDS</div>
+        <div class="recent-views-C61RwL valign-text-middle">RECENT VIEWS</div>
+        <div class="for-you-C61RwL valign-text-middle">FOR YOU</div>
+        <div class="rectangle-373-C61RwL"></div>
+        <div class="rectangle-379-C61RwL"></div>
+        <div class="unix-closet10-C61RwL valign-text-middle">UnixCloset10</div>
+        <div class="x2800-C61RwL valign-text-middle">$28.00</div>
+        <div class="size-12-C61RwL valign-text-middle">Size 12</div>
+        <div class="size-l-C61RwL valign-text-middle">Size L</div>
+        <div class="size-xl-C61RwL valign-text-middle">Size XL</div>
+        <div class="one-size-C61RwL valign-text-middle">One Size</div>
+        <div class="rectangle-374-C61RwL"></div>
+        <div class="rectangle-380-C61RwL"></div>
+        <div class="group-1550-C61RwL">
+          <div class="ellipse-294-ghyN4a"></div>
+          <div class="vector-ghyN4a"></div>
+        </div>
+        <div class="group-1552-C61RwL">
+          <div class="ellipse-294-VSVPT3"></div>
+          <div class="vector-VSVPT3"></div>
+        </div>
+        <div class="group-1553-C61RwL">
+          <div class="ellipse-294-A3zzfQ"></div>
+          <div class="vector-A3zzfQ"></div>
+        </div>
+        <div class="rectangle-377-C61RwL"></div>
+        <div class="akar-iconssearch-C61RwL"></div>
+        <div class="frame-2-C61RwL">
+          <div class="component-1-gUEd1c"><div class="title-i326541991367-bbrMa2 valign-text-middle">All</div></div>
+          <div class="frame-9-gUEd1c">
+            <div class="indicator-qGKWU6"></div>
+          </div>
+          <div
+            class="xsection-gUEd1c"
+            onclick="Lib.autoanim_redirect('%2A,loading-32%23category-page-mens,,ease-out,300.00001192092896', event)"
+          >
+            <div class="title-i326543991370-AfwGUL valign-text-middle">Men</div>
+            <div class="indicator-AfwGUL hidden"></div>
+          </div>
+          <div class="xsection-h9rsX8">
+            <div class="title-i326544991373-drN6HI valign-text-middle">Women</div>
+            <div class="indicator-drN6HI hidden"></div>
+          </div>
+          <div class="xsection-vFHB0p">
+            <div class="title-i326545991376-9xs41Y valign-text-middle">Kids</div>
+            <div class="indicator-9xs41Y hidden"></div>
+          </div>
+          <div class="title-gUEd1c"><div class="title-i326546991378-R5cQNi valign-text-middle">Plus Size</div></div>
+          <div class="xsection-HLSage">
+            <div class="title-i326547991380-4asJFw valign-text-middle">Home</div>
+            <div class="indicator-4asJFw hidden"></div>
+          </div>
+          <div class="xsection-hFKh6m">
+            <div class="title-i326548991383-DeG1lU valign-text-middle">Luxury</div>
+            <div class="indicator-DeG1lU hidden"></div>
+          </div>
+          <div class="title-h9rsX8">
+            <div class="title-i326549991385-dhY3mB valign-text-middle">Beauty &amp; Wellness</div>
+          </div>
+          <div class="xsection-HqQahH">
+            <div class="title-i326550991387-WTH0OD valign-text-middle">Boutiques</div>
+            <div class="indicator-WTH0OD hidden"></div>
+          </div>
+          <div class="rectangle-1961-gUEd1c"></div>
+        </div>
+        <div class="group-1647-C61RwL" onclick="">
+          <div class="frame-4-LyM5gN">
+            <div class="group-2AvjeY">
+              <div class="vector-lcO7pO"></div>
+            </div>
+          </div>
+          <div class="rectangle-378-LyM5gN"></div>
+          <div class="search-i64864243331142-LyM5gN valign-text-middle">Search</div>
+          <div class="search-LyM5gN valign-text-middle">Search</div>
+          <div class="search-i40022633331142-LyM5gN valign-text-middle">Search</div>
+          <div class="search-i40022453331142-LyM5gN valign-text-middle">Search</div>
+          <div class="search-i40022573331142-LyM5gN valign-text-middle">Search</div>
+          <div class="search-i48639453331142-LyM5gN valign-text-middle">Search</div>
+        </div>
+        <div class="ellipse-46-C61RwL"></div>
+        <div class="home-indicator-C61RwL">
+          <div class="phone-indicator-black-BJ28qq">
+            <div class="container-UILJPw"></div>
+            <div class="indicator-UILJPw"></div>
+          </div>
+        </div>
+        <div
+          class="rectangle-1951-C61RwL"
+          onclick="Lib.autoanim_redirect('my-bag-progress-started,loading-32%23my-bag-form-filled,,ease-in,300.00001192092896', event)"
+        ></div>
+        <div class="group-1592-C61RwL">
+          <div class="x200-OqNIcZ valign-text-middle">$200</div>
+          <div class="x65-OqNIcZ valign-text-middle">$65</div>
+          <div class="rectangle-373-OqNIcZ"></div>
+          <div class="x18000-OqNIcZ valign-text-middle">$180.00</div>
+          <div class="x4000-OqNIcZ valign-text-middle">$40.00</div>
+          <div class="rectangle-374-OqNIcZ"></div>
+          <div class="group-1550-OqNIcZ">
+            <div class="ellipse-294-xRPx38"></div>
+            <div class="vector-xRPx38"></div>
+          </div>
+          <div class="group-1551-OqNIcZ">
+            <div class="ellipse-294-cpfcQy"></div>
+            <div class="vector-cpfcQy"></div>
+          </div>
+          <div class="size-12-OqNIcZ valign-text-middle">Size 12</div>
+          <div class="ellipse-294-OqNIcZ"></div>
+          <div class="vector-OqNIcZ"></div>
+          <div class="coles-closet-OqNIcZ valign-text-middle">ColesCloset</div>
+          <div class="gamer-sells900-OqNIcZ valign-text-middle">GamerSells900</div>
+          <div class="denim-bundle-OqNIcZ valign-text-middle">Denim Bundle</div>
+          <div class="white-trucker-OqNIcZ valign-text-middle">White Trucker</div>
+          <div class="size-36-OqNIcZ valign-text-middle">Size 36</div>
+          <div class="one-size-OqNIcZ valign-text-middle">One Size</div>
+          <div class="x95-OqNIcZ valign-text-middle">$95</div>
+          <div class="nick-gibson70-OqNIcZ valign-text-middle">NickGibson70</div>
+          <div class="nick-gibson70-ZaQ3rm valign-text-middle">NickGibson70</div>
+          <div class="nikes-red-and-black-OqNIcZ valign-text-middle">Nikes Red and Black</div>
+          <div class="air-max-orange-OqNIcZ valign-text-middle">Air Max Orange</div>
+          <div class="x8000-OqNIcZ valign-text-middle">$80.00</div>
+          <div class="x8000-ZaQ3rm valign-text-middle">$80.00</div>
+          <div class="size-12-ZaQ3rm valign-text-middle">Size 12</div>
+          <div class="group-1552-OqNIcZ"></div>
+          <div class="suits-by-sal-OqNIcZ valign-text-middle">SuitsBySal</div>
+          <div class="hipster-hal-OqNIcZ valign-text-middle">HipsterHal</div>
+          <div class="red-wings-nwt-OqNIcZ valign-text-middle">Red Wings NWT</div>
+          <div class="skull-hand-t-OqNIcZ valign-text-middle">Skull Hand T</div>
+          <div class="size-xl-OqNIcZ valign-text-middle">Size XL</div>
+        </div>
+        <div class="my-bag-C61RwL valign-text-middle">My Bag</div>
+        <div class="manual-input-C61RwL valign-text-middle">Manual Input</div>
+        <div class="rectangle-402-C61RwL"></div>
+        <div class="line-339-C61RwL"></div>
+        <div class="line-340-C61RwL"></div>
+        <div class="line-341-C61RwL"></div>
+        <div class="line-342-C61RwL"></div>
+        <div class="group-1628-C61RwL">
+          <div class="rectangle-404-pbD7Ce"></div>
+          <div class="next-pbD7Ce valign-text-middle">Next</div>
+          <div class="make-an-offer-pbD7Ce valign-text-middle">Make an offer</div>
+        </div>
+        <div class="pay-C61RwL valign-text-middle">Pay</div>
+        <div class="ship-C61RwL valign-text-middle">Ship</div>
+        <div class="verify-C61RwL valign-text-middle">Verify</div>
+        <div class="line-351-C61RwL"></div>
+        <div class="ellipse-318-C61RwL"></div>
+        <div class="ellipse-319-C61RwL"></div>
+        <div class="ellipse-320-C61RwL"></div>
+        <div class="rectangle-366-C61RwL"></div>
+        <div class="title-C61RwL valign-text-middle">Home</div>
+        <div class="title-VMr6Om valign-text-middle">Sell</div>
+        <div class="title-mzXdH9 valign-text-middle">Alerts</div>
+        <div class="title-QxM5SU valign-text-middle">Profile</div>
+        <div class="group-1520-C61RwL">
+          <div class="group-1517-a1jgCx">
+            <div class="bxbx-home-heart-bAtJAa">
+              <div class="vector-xELxsL"></div>
+              <div class="vector-QO2k16"></div>
+            </div>
+            <div class="rinotification-4-line-bAtJAa">
+              <div class="vector-BxIqmZ"></div>
+            </div>
+            <div class="ggprofile-bAtJAa">
+              <div class="group-bIFxmZ">
+                <div class="vector-Tyykoo"></div>
+                <div class="vector-lFKl16"></div>
+              </div>
+            </div>
+            <div class="vector-bAtJAa"></div>
+          </div>
+        </div>
+        <div class="john-smith-C61RwL valign-text-middle">John Smith</div>
+        <div class="line-352-C61RwL"></div>
+        <div class="mask-group-C61RwL"></div>
+        <div class="recent-views-VMr6Om valign-text-middle">Recent Views</div>
+        <div
+          class="group-1523-C61RwL"
+          onclick="Lib.autoanim_redirect('brands-page,javascript%3AShowOverlay%28%27loading-32%27%2C%20%27animate-appear%27%29%3B,,,;recent-views-page-1,javascript%3AShowOverlay%28%27loading-32%27%2C%20%27animate-appear%27%29%3B,,,;mens-shoes,javascript%3AShowOverlay%28%27loading-32%27%2C%20%27animate-appear%27%29%3B,,,;recent-views-page,javascript%3AShowOverlay%28%27loading-32%27%2C%20%27animate-appear%27%29%3B,,,', event)"
+        >
+          <div class="line-336-CL5AEt"></div>
+          <div class="line-337-CL5AEt"></div>
+          <div class="line-338-CL5AEt"></div>
+          <div class="ellipse-287-CL5AEt">
+            <div class="vector-EF021d"></div>
+            <div class="vector-Vs6TrT"></div>
+          </div>
+          <div class="ellipse-289-CL5AEt">
+            <div class="vector-TV0LB2"></div>
+            <div class="vector-FO4QET"></div>
+          </div>
+          <div class="ellipse-290-CL5AEt">
+            <div class="vector-OEJlJ9"></div>
+            <div class="vector-oaVNqP"></div>
+          </div>
+        </div>
+        <div class="group-1593-C61RwL">
+          <div class="x65-EUCBMU valign-text-middle">$65</div>
+          <div
+            class="rectangle-373-EUCBMU"
+            onclick="Lib.autoanim_redirect('recent-views-page,loading-32%23individual-product-page,,ease-out,300.00001192092896', event)"
+          ></div>
+          <div class="x4000-EUCBMU valign-text-middle">$40.00</div>
+          <div class="one-size-EUCBMU valign-text-middle">One Size</div>
+          <div class="rectangle-374-EUCBMU"></div>
+          <div class="group-1550-EUCBMU">
+            <div class="ellipse-294-6REHx9"></div>
+            <div class="vector-6REHx9"></div>
+          </div>
+          <div class="group-1551-EUCBMU">
+            <div class="ellipse-294-RpUVVG"></div>
+            <div class="vector-RpUVVG"></div>
+          </div>
+          <div class="group-1552-EUCBMU"></div>
+          <div class="x20-EUCBMU valign-text-middle">$20</div>
+          <div class="no-dawg80-EUCBMU valign-text-middle">NoDawg80</div>
+          <div class="mad-korteee69-EUCBMU valign-text-middle">MadKorteee69</div>
+          <div class="bn-hat-EUCBMU valign-text-middle">BN Hat</div>
+          <div class="ray-bans-EUCBMU valign-text-middle">Ray Bans</div>
+          <div class="x1800-EUCBMU valign-text-middle">$18.00</div>
+          <div class="one-size-F4Lmh4 valign-text-middle">One Size</div>
+          <div class="x200-EUCBMU valign-text-middle">$200</div>
+          <div class="nolan-cook17-EUCBMU valign-text-middle">NolanCook17</div>
+          <div class="sams-shoes30-EUCBMU valign-text-middle">SamsShoes30</div>
+          <div class="carhartt-x-nike-shoes-EUCBMU valign-text-middle">Carhartt X Nike Shoes</div>
+          <div class="teal-nikes-EUCBMU valign-text-middle">Teal Nikes</div>
+          <div class="x18000-EUCBMU valign-text-middle">$180.00</div>
+          <div class="size-12-EUCBMU valign-text-middle">Size 12</div>
+          <div class="size-12-F4Lmh4 valign-text-middle">Size 12</div>
+          <div class="x97-EUCBMU valign-text-middle">$97</div>
+          <div class="vintage-shop98-EUCBMU valign-text-middle">VintageShop98</div>
+          <div class="coreys-closet45-EUCBMU valign-text-middle">CoreysCloset45</div>
+          <div class="talentless-t-shirt-EUCBMU valign-text-middle">Talentless T-Shirt</div>
+          <div class="sets-free-hat-EUCBMU valign-text-middle">SetsFree Hat</div>
+          <div class="x4400-EUCBMU valign-text-middle">$44.00</div>
+          <div class="x1000-EUCBMU valign-text-middle">$10.00</div>
+          <div class="size-l-EUCBMU valign-text-middle">Size L</div>
+        </div>
+        <div class="group-1594-C61RwL">
+          <div class="x200-mxF4Ij valign-text-middle">$200</div>
+          <div class="rectangle-373-mxF4Ij"></div>
+          <div class="x18000-mxF4Ij valign-text-middle">$180.00</div>
+          <div class="size-12-mxF4Ij valign-text-middle">Size 12</div>
+          <div class="rectangle-374-mxF4Ij"></div>
+          <div class="group-1550-mxF4Ij">
+            <div class="ellipse-294-MVrAUu"></div>
+            <div class="vector-MVrAUu"></div>
+          </div>
+          <div class="group-1551-mxF4Ij">
+            <div class="ellipse-294-WraMXb"></div>
+            <div class="vector-WraMXb"></div>
+          </div>
+          <div class="group-1552-mxF4Ij"></div>
+          <div class="x9000-mxF4Ij valign-text-middle">$90.00</div>
+          <div class="x65-mxF4Ij valign-text-middle">$65</div>
+          <div class="boots-by-ben-mxF4Ij valign-text-middle">BootsByBen</div>
+          <div class="gamer-sells900-mxF4Ij valign-text-middle">GamerSells900</div>
+          <div class="red-nikes-mxF4Ij valign-text-middle">Red Nikes</div>
+          <div class="original-kii-kii-t-shirt-mxF4Ij valign-text-middle">Original KiiKii T-Shirt</div>
+          <div class="x4000-mxF4Ij valign-text-middle">$40.00</div>
+          <div class="size-xl-mxF4Ij valign-text-middle">Size XL</div>
+          <div class="x95-mxF4Ij valign-text-middle">$95</div>
+          <div class="makdaddykush420-mxF4Ij valign-text-middle">Makdaddykush420</div>
+          <div class="mad-madz69-mxF4Ij valign-text-middle">MadMadz69</div>
+          <div class="air-force-1s-nwt-mxF4Ij valign-text-middle">Air Force 1’s NWT</div>
+          <div class="red-black-nikes-mxF4Ij valign-text-middle">Red &amp; Black Nikes</div>
+          <div class="size-12-gOziSy valign-text-middle">Size 12</div>
+          <div class="x165-mxF4Ij valign-text-middle">$165</div>
+          <div class="cole-smith80-mxF4Ij valign-text-middle">ColeSmith80</div>
+          <div class="micks-cloest30-mxF4Ij valign-text-middle">MicksCloest30</div>
+          <div class="wayfer-ray-bans-mxF4Ij valign-text-middle">Wayfer Ray Bans</div>
+          <div class="glasses-ray-bans-mxF4Ij valign-text-middle">Glasses Ray Bans</div>
+          <div class="one-size-mxF4Ij valign-text-middle">One Size</div>
+        </div>
+        <div class="group-1595-C61RwL">
+          <div class="x65-Oi8xp4 valign-text-middle">$65</div>
+          <div class="rectangle-373-Oi8xp4"></div>
+          <div class="boots-by-ben-Oi8xp4 valign-text-middle">BootsByBen</div>
+          <div class="gamer-sells900-Oi8xp4 valign-text-middle">GamerSells900</div>
+          <div class="x4000-Oi8xp4 valign-text-middle">$40.00</div>
+          <div class="size-12-Oi8xp4 valign-text-middle">Size 12</div>
+          <div class="rectangle-374-Oi8xp4"></div>
+          <div class="group-1550-Oi8xp4">
+            <div class="ellipse-294-UKt0Xh"></div>
+            <div class="vector-UKt0Xh"></div>
+          </div>
+          <div class="group-1553-Oi8xp4"></div>
+          <div class="group-1551-Oi8xp4">
+            <div class="ellipse-294-XHs3hJ"></div>
+            <div class="vector-XHs3hJ"></div>
+          </div>
+          <div class="x50-Oi8xp4 valign-text-middle">$50</div>
+          <div class="converse-Oi8xp4 valign-text-middle">Converse</div>
+          <div class="original-kii-kii-t-shirt-Oi8xp4 valign-text-middle">Original KiiKii T-Shirt</div>
+          <div class="x4000-wt7mO2 valign-text-middle">$40.00</div>
+          <div class="size-xl-Oi8xp4 valign-text-middle">Size XL</div>
+          <div class="group-1552-Oi8xp4"></div>
+          <div class="x200-Oi8xp4 valign-text-middle">$200</div>
+          <div class="red-wings-nwt-Oi8xp4 valign-text-middle">Red Wings NWT</div>
+          <div class="pumas-Oi8xp4 valign-text-middle">Pumas</div>
+          <div class="x18000-Oi8xp4 valign-text-middle">$180.00</div>
+          <div class="size-13-Oi8xp4 valign-text-middle">Size 13</div>
+          <div class="x20-Oi8xp4 valign-text-middle">$20</div>
+          <div class="x85-Oi8xp4 valign-text-middle">$85</div>
+          <div class="shoe-guy90-Oi8xp4 valign-text-middle">ShoeGuy90</div>
+          <div class="sage-beanie-Oi8xp4 valign-text-middle">Sage Beanie</div>
+          <div class="tan-boots-new-Oi8xp4 valign-text-middle">Tan Boots New</div>
+          <div class="x1800-Oi8xp4 valign-text-middle">$18.00</div>
+          <div class="x7000-Oi8xp4 valign-text-middle">$70.00</div>
+          <div class="one-size-Oi8xp4 valign-text-middle">One Size</div>
+        </div>
+        <div class="make-an-offer-C61RwL valign-text-middle">Make an offer</div>
+        <div class="your-offer-C61RwL valign-text-middle">Your Offer</div>
+        <div class="youre-about-to-e-to-learn-more-C61RwL">
+          <span class="span0-RqHiDE">You’re about to make an offer. </span
+          ><span class="span1-RqHiDE"
+            >If the seller accepts, you’ll be automatically charged this amount. Click here to</span
+          ><span class="span2-RqHiDE"> Learn More</span>
+        </div>
+        <div class="x-C61RwL valign-text-middle">$</div>
+        <div class="rectangle-399-C61RwL"></div>
+        <div class="i-acknowledge-t-ffer-is-binding-C61RwL valign-text-middle">I acknowledge this offer is binding</div>
+        <div class="your-offer-has-been-submitted-C61RwL valign-text-middle">Your offer has been submitted!</div>
+        <div class="group-1618-C61RwL">
+          <div class="loading-S8vfpJ">
+            <div class="loading-container-N4JXUi"></div>
+            <div class="loading-fill-N4JXUi"></div>
+            <div class="loading-fill-JIb6M3"></div>
+          </div>
+          <div class="claritysuccess-line-S8vfpJ">
+            <div class="vector-8dae0j"></div>
+          </div>
+        </div>
+        <div class="you-will-reciev-tap-learn-more-C61RwL">
+          <span class="span0-3Fv24o"
+            >You will recieve an email within the next 24 hours with the sellers response. To learn more about this
+            process tap </span
+          ><span class="span1-3Fv24o">Learn More</span>
+        </div>
+        <div
+          class="no-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,loading-32%23individual-product-page,,ease-in,300.00001192092896', event)"
+        >
+          <div class="rectangle-1445-hGGiLo"></div>
+          <div class="union-3-hGGiLo"></div>
+        </div>
+        <div class="icon-dropdown-VMr6Om">
+          <div class="vector-4lfWTL"></div>
+        </div>
+        <div class="icon-dropdown-mzXdH9">
+          <div class="vector-TxssRv"></div>
+        </div>
+        <div class="vintage-shop98-C61RwL valign-text-middle">VintageShop98</div>
+        <div class="talentless-t-shirt-black-C61RwL valign-text-middle">Talentless T-Shirt Black</div>
+        <div class="shipping-C61RwL valign-text-middle">Shipping</div>
+        <div class="returns-buyer-protection-C61RwL valign-text-middle">Returns &amp; Buyer Protection</div>
+        <div class="sizing-C61RwL valign-text-middle">Sizing</div>
+        <div class="size-large-C61RwL valign-text-middle">Size: Large</div>
+        <div class="message-seller-C61RwL valign-text-middle">Message Seller</div>
+        <div class="x44-C61RwL valign-text-middle">$44</div>
+        <div class="condition-new-with-tags-C61RwL">Condition: New with Tags</div>
+        <div class="chatbubbleoutline-C61RwL">
+          <div class="vector-uKpMk0"></div>
+          <div class="vector-UzKH1y"></div>
+        </div>
+        <div class="rectangle-404-C61RwL"></div>
+        <div class="you-also-may-like-C61RwL valign-text-middle">YOU ALSO MAY LIKE</div>
+        <div class="line-395-C61RwL"></div>
+        <div class="line-398-C61RwL"></div>
+        <div class="line-396-C61RwL"></div>
+        <div class="line-397-C61RwL"></div>
+        <div
+          class="group-1629-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,loading-32%23make-an-offer,,ease-in,300.00001192092896', event)"
+        >
+          <div class="rectangle-404-stqFmq"></div>
+          <div class="make-an-offer-stqFmq"></div>
+        </div>
+        <div class="rectangle-1947-C61RwL"></div>
+        <div class="rectangle-1948-C61RwL"></div>
+        <div
+          class="rectangle-1953-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,javascript%3AShowOverlay%28%27messag-1%27%2C%20%27animate-appear%27%29%3B,,,', event)"
+        ></div>
+        <div class="ellipse-18-C61RwL"></div>
+        <div class="ellipse-19-C61RwL"></div>
+        <div class="ellipse-20-C61RwL"></div>
+        <div class="icon-dropdown-QxM5SU">
+          <div class="vector-BmnOtF"></div>
+        </div>
+        <div class="transform-C61RwL">
+          <div class="vector-5rGcjT"></div>
+          <div class="vector-Cxtqc3"></div>
+        </div>
+        <div class="rectangle-405-C61RwL"></div>
+        <div class="vector-VMr6Om"></div>
+        <div class="x65-C61RwL valign-text-middle">$65</div>
+        <div class="x45-C61RwL valign-text-middle">$45</div>
+        <div class="new-and-popular-mens-listings-C61RwL valign-text-middle">New and popular Men’s Listings</div>
+        <div class="boots-by-ben-C61RwL valign-text-middle">BootsByBen</div>
+        <div class="gamer-sells900-C61RwL valign-text-middle">GamerSells900</div>
+        <div class="hank5401-C61RwL valign-text-middle">Hank5401</div>
+        <div class="red-wings-nwt-C61RwL valign-text-middle">Red Wings NWT</div>
+        <div class="unisex-shorts-C61RwL valign-text-middle">Unisex Shorts</div>
+        <div class="original-kii-kii-t-shirt-C61RwL valign-text-middle">Original KiiKii T-Shirt</div>
+        <div class="grey-cap-worn-once-C61RwL valign-text-middle">Grey Cap Worn Once</div>
+        <div class="x18000-C61RwL valign-text-middle">$180.00</div>
+        <div class="x4000-C61RwL valign-text-middle">$40.00</div>
+        <div class="x3000-C61RwL valign-text-middle">$30.00</div>
+        <div class="group-1551-C61RwL">
+          <div class="ellipse-294-a8mHAx"></div>
+          <div class="group-1552-a8mHAx"></div>
+          <div class="vector-a8mHAx"></div>
+        </div>
+        <div class="group-1548-C61RwL"></div>
+        <div class="mens-categories-C61RwL">
+          <div class="ellipse-11-uqK0oJ"></div>
+          <div class="ellipse-13-uqK0oJ"></div>
+          <div class="ellipse-16-uqK0oJ"></div>
+          <div class="ellipse-12-uqK0oJ"></div>
+          <div class="ellipse-14-uqK0oJ"></div>
+          <div class="shirts-uqK0oJ valign-text-middle">Shirts</div>
+          <div class="ellipse-18-uqK0oJ"></div>
+          <div class="icons8-shirt-64-5-uqK0oJ"></div>
+          <div class="icons8-shirt-64-6-uqK0oJ"></div>
+          <div class="icons8-glasses-64-1-uqK0oJ"></div>
+          <div class="icons8-sneaker-64-1-uqK0oJ"></div>
+          <div class="icons8-jeans-64-1-uqK0oJ"></div>
+          <div class="icons8-cap-64-1-uqK0oJ"></div>
+          <div class="sunglasses-uqK0oJ valign-text-middle">Sunglasses</div>
+          <div class="shoes-uqK0oJ valign-text-middle">Shoes</div>
+          <div class="hats-uqK0oJ valign-text-middle">Hats</div>
+          <div class="outerwear-uqK0oJ valign-text-middle">Outerwear</div>
+          <div class="pants-uqK0oJ valign-text-middle">Pants</div>
+        </div>
+        <div class="alerts-default-1-line-title-1-C61RwL"></div>
+        <div class="alerts-default-1-line-title-2-C61RwL"></div>
+        <div class="rectangle-1939-C61RwL"></div>
+        <div class="rectangle-1940-C61RwL"></div>
+        <div class="rectangle-1941-C61RwL"></div>
+        <div class="rectangle-1950-C61RwL"></div>
+        <div class="rectangle-1954-C61RwL"></div>
+        <div class="rectangle-1955-C61RwL"></div>
+        <div
+          class="rectangle-1967-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,loading-32%23sell-screen,,ease-in,300.00001192092896', event)"
+        ></div>
+        <div
+          class="rectangle-1968-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,loading-32%23allhomepage,,ease-in,300.00001192092896', event)"
+        ></div>
+        <div class="rectangle-383-C61RwL"></div>
+        <div class="snap-a-picutre-o-start-selling-C61RwL">Snap a picutre of your <br />clothes to start selling.</div>
+        <div class="claritypicture-solid-badged-C61RwL">
+          <div class="vector-53735x"></div>
+          <div class="vector-9CxLlO"></div>
+        </div>
+        <div class="icons8-rotate-camera-90-1-C61RwL"></div>
+        <div class="group-1654-C61RwL">
+          <div class="ellipse-413-xXSGWs"></div>
+          <div class="ellipse-414-xXSGWs"></div>
+        </div>
+        <div class="x55-C61RwL valign-text-middle">$55</div>
+        <div class="x145-C61RwL valign-text-middle">$145</div>
+        <div class="new-and-popular-on-poshmark-C61RwL valign-text-middle">New and popular on Poshmark</div>
+        <div class="will-smith50-C61RwL valign-text-middle">WillSmith50</div>
+        <div class="coreys-closet8-C61RwL valign-text-middle">CoreysCloset8</div>
+        <div class="glasses-guy9010-C61RwL valign-text-middle">GlassesGuy9010</div>
+        <div class="black-nike-air-C61RwL valign-text-middle">Black Nike Air</div>
+        <div class="sets-free-cap-C61RwL valign-text-middle">Sets Free Cap</div>
+        <div class="blue-merle-tee-C61RwL valign-text-middle">Blue Merle Tee</div>
+        <div class="ray-bans-C61RwL valign-text-middle">Ray Bans</div>
+        <div class="x10000-C61RwL valign-text-middle">$100.00</div>
+        <div class="x1000-C61RwL valign-text-middle">$10.00</div>
+        <div class="x6000-C61RwL valign-text-middle">$60.00</div>
+        <div class="all-categories-C61RwL">
+          <div class="ellipse-11-UhqOJe"></div>
+          <div class="icons8-bra-64-1-UhqOJe"></div>
+          <div class="ellipse-13-UhqOJe"></div>
+          <div class="ellipse-12-UhqOJe"></div>
+          <div class="icons8-chair-64-1-UhqOJe"></div>
+          <div class="ellipse-14-UhqOJe"></div>
+          <div class="clothes-UhqOJe valign-text-middle">Clothes</div>
+          <div class="ellipse-18-UhqOJe"></div>
+          <div class="icons8-shirt-64-5-UhqOJe"></div>
+          <div class="furniture-UhqOJe valign-text-middle">Furniture</div>
+          <div class="swim-UhqOJe valign-text-middle">Swim</div>
+          <div class="shoes-UhqOJe valign-text-middle">Shoes</div>
+          <div class="accessories-UhqOJe valign-text-middle">Accessories</div>
+          <div class="icons8-bag-64-1-UhqOJe"></div>
+          <div class="icons8-sneaker-64-2-UhqOJe"></div>
+        </div>
+        <div class="select-payment-C61RwL valign-text-middle">Select Payment</div>
+        <div class="venmo-C61RwL valign-text-middle">Venmo</div>
+        <div class="paypal-C61RwL valign-text-middle">PayPal</div>
+        <div class="cardholder-name-C61RwL valign-text-middle">Cardholder name</div>
+        <div class="card-number-C61RwL valign-text-middle">Card number</div>
+        <div class="date-C61RwL valign-text-middle">Date</div>
+        <div class="cvv-C61RwL valign-text-middle">CVV</div>
+        <div class="line-343-C61RwL"></div>
+        <div class="line-344-C61RwL"></div>
+        <div class="or-C61RwL valign-text-middle">OR</div>
+        <div class="rectangle-1946-C61RwL"></div>
+        <div class="shopping-bag-C61RwL valign-text-middle">Shopping Bag</div>
+        <div class="total-C61RwL valign-text-middle">Total</div>
+        <div class="x4850-C61RwL valign-text-middle">$48.50</div>
+        <div class="sub-total-shipping-charges-tax-C61RwL valign-text-middle">
+          Sub Total<br />Shipping Charges<br />Tax
+        </div>
+        <div class="x4400-0-450-C61RwL valign-text-middle">$44.00<br />$0<br />$4.50</div>
+        <div class="line-348-C61RwL"></div>
+        <div class="remove-C61RwL valign-text-middle">Remove</div>
+        <div class="qty-1-C61RwL valign-text-middle">Qty: 1</div>
+        <div class="talentless-t-shirt-C61RwL valign-text-middle">Talentless t-shirt</div>
+        <div class="x4400-C61RwL valign-text-middle">$44.00</div>
+        <div class="x123445643267t-C61RwL valign-text-middle">123445643267t</div>
+        <div class="x1023-C61RwL valign-text-middle">10/23</div>
+        <div class="x123-C61RwL valign-text-middle">123</div>
+        <div class="next-C61RwL valign-text-middle">Next</div>
+        <div class="mode-light-type-alphabetic-C61RwL">
+          <div class="home-indicator-rxju3E">
+            <div class="home-indicator-63pQQu"></div>
+          </div>
+          <div class="keys-rxju3E">
+            <div class="dictation-sVrOaI"></div>
+            <div class="emoji-sVrOaI"></div>
+            <div class="return-sVrOaI">
+              <div class="rectangle-Dh3wfS"></div>
+              <div class="label-i320111230373-Dh3wfS">Go</div>
+            </div>
+            <div class="space-sVrOaI">
+              <div class="rectangle-g0kjia"></div>
+              <div class="label-i320111230376-g0kjia">space</div>
+            </div>
+            <div class="x123-sVrOaI">
+              <div class="rectangle-afOPrc"></div>
+              <div class="label-i320111230379-afOPrc">123</div>
+            </div>
+            <div class="delete-sVrOaI">
+              <div class="key-light-tAxFyw">
+                <div class="rectangle-8i0bZ9"></div>
+                <div class="label-i320111230383-8i0bZ9"></div>
+              </div>
+              <div class="delete-button-tAxFyw"></div>
+            </div>
+            <div class="shift-sVrOaI">
+              <div class="key-light-IqmBxj">
+                <div class="rectangle-zu7aNs"></div>
+                <div class="symbol-i320111230396-zu7aNs"></div>
+              </div>
+              <div class="shift-IqmBxj"></div>
+            </div>
+            <div class="m-sVrOaI">
+              <div class="rectangle-qRDYJD"></div>
+              <div class="symbol-i320111230400-qRDYJD">M</div>
+            </div>
+            <div class="n-sVrOaI">
+              <div class="rectangle-SBmMk6"></div>
+              <div class="symbol-i320111230403-SBmMk6">N</div>
+            </div>
+            <div class="b-sVrOaI">
+              <div class="rectangle-1xappx"></div>
+              <div class="symbol-i320111230406-1xappx">B</div>
+            </div>
+            <div class="v-sVrOaI">
+              <div class="rectangle-LD1UqN"></div>
+              <div class="symbol-i320111230409-LD1UqN">V</div>
+            </div>
+            <div class="c-sVrOaI">
+              <div class="rectangle-6zFknU"></div>
+              <div class="symbol-i320111230412-6zFknU">C</div>
+            </div>
+            <div class="x-sVrOaI">
+              <div class="rectangle-8yKfQo"></div>
+              <div class="symbol-i320111230415-8yKfQo">X</div>
+            </div>
+            <div class="z-sVrOaI">
+              <div class="rectangle-XBcWyT"></div>
+              <div class="symbol-i320111230418-XBcWyT">Z</div>
+            </div>
+            <div class="l-sVrOaI">
+              <div class="rectangle-DJNF3x"></div>
+              <div class="symbol-i320111230421-DJNF3x">L</div>
+            </div>
+            <div class="k-sVrOaI">
+              <div class="rectangle-65t1xE"></div>
+              <div class="symbol-i320111230424-65t1xE">K</div>
+            </div>
+            <div class="j-sVrOaI">
+              <div class="rectangle-jxWf7s"></div>
+              <div class="symbol-i320111230427-jxWf7s">J</div>
+            </div>
+            <div class="h-sVrOaI">
+              <div class="rectangle-n9CN4q"></div>
+              <div class="symbol-i320111230430-n9CN4q">H</div>
+            </div>
+            <div class="g-sVrOaI">
+              <div class="rectangle-dX8oiQ"></div>
+              <div class="symbol-i320111230433-dX8oiQ">G</div>
+            </div>
+            <div class="f-sVrOaI">
+              <div class="rectangle-bd7zD5"></div>
+              <div class="symbol-i320111230436-bd7zD5">F</div>
+            </div>
+            <div class="d-sVrOaI">
+              <div class="rectangle-L71GxM"></div>
+              <div class="symbol-i320111230439-L71GxM">D</div>
+            </div>
+            <div class="s-sVrOaI">
+              <div class="rectangle-HSW1Lo"></div>
+              <div class="symbol-i320111230442-HSW1Lo">S</div>
+            </div>
+            <div class="a-sVrOaI">
+              <div class="rectangle-tpUxOQ"></div>
+              <div class="symbol-i320111230445-tpUxOQ">A</div>
+            </div>
+            <div class="p-sVrOaI">
+              <div class="rectangle-mG41Cy"></div>
+              <div class="symbol-i320111230448-mG41Cy">P</div>
+            </div>
+            <div class="o-sVrOaI">
+              <div class="rectangle-JpwRxt"></div>
+              <div class="symbol-i320111230451-JpwRxt">O</div>
+            </div>
+            <div class="i-sVrOaI">
+              <div class="rectangle-ItPsbP"></div>
+              <div class="symbol-i320111230454-ItPsbP">I</div>
+            </div>
+            <div class="u-sVrOaI">
+              <div class="rectangle-CSmgjW"></div>
+              <div class="symbol-i320111230457-CSmgjW">U</div>
+            </div>
+            <div class="y-sVrOaI">
+              <div class="rectangle-jzdBH8"></div>
+              <div class="symbol-i320111230460-jzdBH8">Y</div>
+            </div>
+            <div class="t-sVrOaI">
+              <div class="rectangle-8FWNRD"></div>
+              <div class="symbol-i320111230463-8FWNRD">T</div>
+            </div>
+            <div class="r-sVrOaI">
+              <div class="rectangle-h2dvsT"></div>
+              <div class="symbol-i320111230466-h2dvsT">R</div>
+            </div>
+            <div class="e-sVrOaI">
+              <div class="rectangle-mcoelf"></div>
+              <div class="symbol-i320111230469-mcoelf">E</div>
+            </div>
+            <div class="w-sVrOaI">
+              <div class="rectangle-w8gwvV"></div>
+              <div class="symbol-i320111230472-w8gwvV">W</div>
+            </div>
+            <div class="q-sVrOaI">
+              <div class="rectangle-5VLn8v"></div>
+              <div class="symbol-i320111230475-5VLn8v">Q</div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-1942-C61RwL"></div>
+        <div class="line-390-C61RwL"></div>
+        <div class="line-391-C61RwL"></div>
+        <div class="line-392-C61RwL"></div>
+        <div class="line-393-C61RwL"></div>
+        <div class="yes-that-would-work-could-C61RwL valign-text-middle">Yes, that would work, could...</div>
+        <div class="x3m-C61RwL valign-text-middle">3m</div>
+        <div class="x1w-C61RwL valign-text-middle">1w</div>
+        <div class="x1w-VMr6Om valign-text-middle">1w</div>
+        <div class="yes-thank-you-C61RwL valign-text-middle">Yes thank you.</div>
+        <div class="i-cannot-go-lower-than-20-do-C61RwL valign-text-middle">I cannot go lower than 20 do...</div>
+        <div class="carl-sam-C61RwL valign-text-middle">Carl Sam</div>
+        <div class="emily-cohen-C61RwL valign-text-middle">Emily Cohen</div>
+        <div class="tabs-C61RwL">
+          <div class="xsection-c0Ytex">
+            <div class="title-OybNR9 valign-text-middle">Messages</div>
+            <div class="indicator-OybNR9"></div>
+          </div>
+          <div class="xsection-C2iodK">
+            <div class="title-9JW0OQ valign-text-middle">Comments</div>
+            <div class="indicator-9JW0OQ hidden"></div>
+          </div>
+          <div class="xsection-orn2kC">
+            <div class="title-gJlOx9 valign-text-middle">Offers</div>
+            <div class="indicator-gJlOx9 hidden"></div>
+          </div>
+          <div class="xsection-8o5Dvy">
+            <div class="title-xSAsbh valign-text-middle">Orders</div>
+            <div class="indicator-xSAsbh hidden"></div>
+          </div>
+          <div class="xsection-FwVkkQ">
+            <div class="title-7PKNQ8 valign-text-middle">Likes</div>
+            <div class="indicator-7PKNQ8 hidden"></div>
+          </div>
+        </div>
+        <div class="ellipse-407-C61RwL"></div>
+        <div class="ellipse-410-C61RwL"></div>
+        <div class="ellipse-411-C61RwL"></div>
+        <div class="mask-group-VMr6Om"></div>
+        <div class="mask-group-mzXdH9"></div>
+        <div class="group-1525-C61RwL">
+          <div class="rectangle-2-cQumgo"></div>
+        </div>
+        <div class="group-1530-C61RwL">
+          <div class="rectangle-2-MMEDaE"></div>
+        </div>
+        <div class="group-1526-C61RwL">
+          <div class="rectangle-2-pbjerx"></div>
+        </div>
+        <div class="group-1527-C61RwL">
+          <div class="rectangle-2-slXGBH"></div>
+        </div>
+        <div class="group-1528-C61RwL">
+          <div class="rectangle-2-CUS6W3"></div>
+        </div>
+        <div class="line-372-C61RwL"></div>
+        <div class="line-373-C61RwL"></div>
+        <div class="line-374-C61RwL"></div>
+        <div class="line-375-C61RwL"></div>
+        <div class="line-376-C61RwL"></div>
+        <div class="change-profile-picture-C61RwL valign-text-middle">Change Profile Picture</div>
+        <div class="john-smith-VMr6Om valign-text-middle">John Smith</div>
+        <div class="guide-to-poshmark-C61RwL valign-text-middle">Guide to Poshmark</div>
+        <div class="selling-C61RwL valign-text-middle">Selling</div>
+        <div class="purchases-sales-C61RwL valign-text-middle">Purchases &amp; Sales</div>
+        <div class="offers-C61RwL valign-text-middle">Offers</div>
+        <div class="view-profile-C61RwL valign-text-middle">View Profile</div>
+        <div class="icons8-shirt-64-8-C61RwL"></div>
+        <div class="line-377-C61RwL"></div>
+        <div class="my-likes-C61RwL valign-text-middle">My Likes</div>
+        <div class="quick-links-C61RwL valign-text-middle">Quick Links</div>
+        <div class="account-C61RwL valign-text-middle">Account</div>
+        <div class="line-374-VMr6Om"></div>
+        <div class="line-375-VMr6Om"></div>
+        <div class="invite-friends-earn-cash-C61RwL valign-text-middle">Invite Friends, Earn Cash!</div>
+        <div class="find-people-C61RwL valign-text-middle">Find People</div>
+        <div class="line-374-mzXdH9"></div>
+        <div class="line-375-mzXdH9"></div>
+        <div class="line-376-VMr6Om"></div>
+        <div class="line-377-VMr6Om"></div>
+        <div class="line-378-C61RwL"></div>
+        <div class="payment-methods-C61RwL valign-text-middle">Payment Methods</div>
+        <div class="edit-my-size-C61RwL valign-text-middle">Edit My Size</div>
+        <div class="share-settings-C61RwL valign-text-middle">Share Settings</div>
+        <div class="notifications-C61RwL valign-text-middle">Notifications</div>
+        <div class="line-380-C61RwL"></div>
+        <div class="line-381-C61RwL"></div>
+        <div class="group-1529-C61RwL">
+          <div class="rectangle-2-3dipMI"></div>
+        </div>
+        <div class="help-C61RwL valign-text-middle">Help</div>
+        <div class="line-383-C61RwL"></div>
+        <div class="poshmark-support-center-C61RwL valign-text-middle">Poshmark Support Center</div>
+        <div class="faq-C61RwL valign-text-middle">FAQ</div>
+        <div class="privacy-poolicy-C61RwL valign-text-middle">Privacy Policy</div>
+        <div class="line-384-C61RwL"></div>
+        <div class="line-385-C61RwL"></div>
+        <div class="line-382-C61RwL"></div>
+        <div class="rectangle-1686-C61RwL"></div>
+        <div class="earnings-C61RwL valign-text-middle">Earnings</div>
+        <div class="ellipse-396-C61RwL"></div>
+        <div class="ellipse-397-C61RwL"></div>
+        <div class="balance-C61RwL valign-text-middle">Balance</div>
+        <div class="x000-C61RwL valign-text-middle">$0.00</div>
+        <div class="x0-C61RwL valign-text-middle">0</div>
+        <div class="listings-C61RwL valign-text-middle">Listings</div>
+        <div class="path-71-C61RwL"></div>
+        <div class="path-72-C61RwL"></div>
+        <div class="path-73-C61RwL"></div>
+        <div class="path-74-C61RwL"></div>
+        <div class="path-75-C61RwL"></div>
+        <div class="path-76-C61RwL"></div>
+        <div class="path-77-C61RwL"></div>
+        <div class="path-78-C61RwL"></div>
+        <div class="path-79-C61RwL"></div>
+        <div class="path-80-C61RwL"></div>
+        <div class="path-81-C61RwL"></div>
+        <div class="path-82-C61RwL"></div>
+        <div class="path-83-C61RwL"></div>
+        <div class="path-84-C61RwL"></div>
+        <div class="path-85-C61RwL"></div>
+        <div class="path-86-C61RwL"></div>
+        <div class="icons8-customer-64-1-C61RwL"></div>
+        <div class="icons8-market-64-C61RwL"></div>
+        <div class="icons8-basket-64-C61RwL"></div>
+        <div class="icons8-overstock-sale-64-C61RwL"></div>
+        <div class="icons8-heart-outline-64-C61RwL"></div>
+        <div class="brands-VMr6Om valign-text-middle">Brands</div>
+        <div class="group-1608-C61RwL">
+          <div class="vector-6-7xxApd"></div>
+          <div class="group-1605-7xxApd">
+            <div class="group-1596-Tq7fHQ">
+              <div class="your-faves-cZ2Hnx valign-text-middle">Your faves</div>
+              <div class="saved-brands-cZ2Hnx valign-text-middle">SAVED BRANDS</div>
+              <div class="see-all-cZ2Hnx valign-text-middle">See all</div>
+            </div>
+            <div class="group-1551-Tq7fHQ"></div>
+            <div class="group-1599-Tq7fHQ"></div>
+            <div class="champion-icon-0-Tq7fHQ"></div>
+            <div class="champion-icon-1-Tq7fHQ"></div>
+            <div class="pacific-sunwear-logo-Tq7fHQ"></div>
+            <div class="j-crew-icon-Tq7fHQ"></div>
+          </div>
+        </div>
+        <div class="group-1609-C61RwL">
+          <div class="vector-6-oTqIhL"></div>
+          <div class="group-1605-oTqIhL">
+            <div class="group-1596-tAmCFv">
+              <div class="top-poshmark-brands-u3iAJ4 valign-text-middle">Top Poshmark Brands</div>
+              <div class="popular-brands-u3iAJ4 valign-text-middle">POPULAR BRANDS</div>
+              <div class="see-all-u3iAJ4 valign-text-middle">See all</div>
+            </div>
+            <div class="group-1551-tAmCFv"></div>
+            <div class="group-1599-tAmCFv"></div>
+            <div class="champion-icon-0-tAmCFv"></div>
+            <div class="layer1-tAmCFv">
+              <div class="path855-ooysc1"></div>
+              <div class="vector-ooysc1"></div>
+              <div class="vector-lE4cLf"></div>
+              <div class="vector-JVdkqV"></div>
+              <div class="vector-jaxsp3"></div>
+              <div class="vector-3MxT7k"></div>
+            </div>
+            <div class="adidas-ag-icon-0-tAmCFv"></div>
+          </div>
+        </div>
+        <div class="group-1610-C61RwL">
+          <div class="vector-6-Ta1jqm"></div>
+          <div class="group-1605-Ta1jqm">
+            <div class="group-1596-iZHjI4">
+              <div class="based-on-your-style-1vONqh valign-text-middle">Based on your style</div>
+              <div class="suggested-brands-1vONqh valign-text-middle">SUGGESTED BRANDS</div>
+              <div class="see-all-1vONqh valign-text-middle">See all</div>
+            </div>
+            <div class="group-1551-iZHjI4"></div>
+            <div class="group-1599-iZHjI4"></div>
+            <div class="vector-iZHjI4"></div>
+            <div class="champion-icon-0-iZHjI4"></div>
+            <div class="champion-icon-1-iZHjI4"></div>
+            <div class="group-iZHjI4">
+              <div class="vector-NQgsek"></div>
+              <div class="vector-Uzm0F7"></div>
+            </div>
+          </div>
+        </div>
+        <div class="louis-vuitton-logo-C61RwL">
+          <div class="x000000ff-1WFRrO"></div>
+        </div>
+        <div class="tillys-logo-C61RwL"></div>
+        <div class="jordan-brand-classic-icon-C61RwL"></div>
+        <div class="mens-shoes-C61RwL valign-text-middle">Mens Shoes</div>
+        <div class="shipping-address-C61RwL valign-text-middle">Shipping Address</div>
+        <div class="rectangle-1674-C61RwL"></div>
+        <div class="rectangle-1675-C61RwL"></div>
+        <div class="rectangle-1677-C61RwL"></div>
+        <div class="rectangle-1676-C61RwL"></div>
+        <div class="address-C61RwL">Address</div>
+        <div class="city-town-C61RwL">City/ Town</div>
+        <div class="state-C61RwL">State</div>
+        <div class="zipcode-C61RwL">Zip code</div>
+        <div class="rectangle-1678-C61RwL"></div>
+        <div class="appt-C61RwL">Apt #</div>
+        <div
+          class="rectangle-1952-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,my-bag-shipping-address-form-filled,,,', event)"
+        ></div>
+        <div class="rectangle-1936-C61RwL"></div>
+        <div class="free-shipping-C61RwL valign-text-middle">Free Shipping</div>
+        <div
+          class="x-VMr6Om"
+          onclick="Lib.autoanim_redirect('%2A,loading-32%23recent-views-page-1,,ease-in,300.00001192092896', event)"
+        >
+          <div class="vector-HclxNC"></div>
+          <div class="vector-mmS1IE"></div>
+        </div>
+        <div class="group-1649-C61RwL">
+          <div class="rectangle-383-om013M"></div>
+          <div class="group-1541-om013M">
+            <div class="group-1526-cqVF0O">
+              <div class="rectangle-350-EoKnfc"></div>
+              <div class="title-EoKnfc valign-text-middle">Home</div>
+              <div class="title-XsqJPa valign-text-middle">Sell</div>
+              <div class="title-gnRd4x valign-text-middle">Alerts</div>
+              <div class="title-bxR3oO valign-text-middle">Profile</div>
+            </div>
+            <div class="frame-4-cqVF0O">
+              <div class="group-1519-G22qxr">
+                <div class="group-1517-80kg20">
+                  <div
+                    class="bxbx-home-heart-WxNBZA"
+                    onclick="Lib.autoanim_redirect('%2A,loading-32%23allhomepage,,,', event)"
+                  >
+                    <div class="vector-ObBgD1"></div>
+                    <div class="vector-c21sN1"></div>
+                  </div>
+                  <div class="rinotification-4-line-WxNBZA">
+                    <div class="vector-DYYsAh"></div>
+                  </div>
+                  <div class="ggprofile-WxNBZA">
+                    <div class="group-syV9ks">
+                      <div class="vector-Vm8TD4"></div>
+                      <div class="vector-S0vXeK"></div>
+                    </div>
+                  </div>
+                  <div class="vector-WxNBZA"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-indicator-om013M">
+            <div class="phone-indicator-black-rfdJn8">
+              <div class="container-g6RnX2"></div>
+              <div class="indicator-g6RnX2"></div>
+            </div>
+          </div>
+          <div class="rectangle-1963-om013M"></div>
+          <div class="rectangle-1964-om013M"></div>
+          <div
+            class="rectangle-1965-om013M"
+            onclick="Lib.autoanim_redirect('%2A,loading-32%23alerts-page,,ease-in,300.00001192092896', event)"
+          ></div>
+          <div
+            class="rectangle-1966-om013M"
+            onclick="Lib.autoanim_redirect('%2A,loading-32%23profile-page,,ease-in,300.00001192092896', event)"
+          ></div>
+          <div
+            class="rectangle-1967-om013M"
+            onclick="Lib.autoanim_redirect('%2A,loading-32%23camera-access-permission-screen,,ease-in,300.00001192092896', event)"
+          ></div>
+        </div>
+        <div class="x0000-C61RwL valign-text-middle">00.00</div>
+        <div
+          class="rectangle-345-C61RwL"
+          onclick="Lib.autoanim_redirect('%2A,loading-32%23make-an-offer-2,,ease-in,300.00001192092896', event)"
+        ></div>
+        <div class="mode-light-type-numeric-C61RwL">
+          <div class="home-indicator-cKiU8l">
+            <div class="home-indicator-V3UzJQ"></div>
+          </div>
+          <div class="keys-cKiU8l"></div>
+        </div>
+        <div class="rectangle-400-C61RwL"></div>
+        <div class="x1200-C61RwL valign-text-middle">12.00</div>
+        <div class="group-1513-C61RwL">
+          <div class="group-1512-3pNjIz">
+            <div class="rectangle-346-5ruTH1"></div>
+            <div class="check-5ruTH1">
+              <div class="check-x8u7fa"></div>
+              <div class="vector-x8u7fa"></div>
+              <div class="vector-jOMTyI"></div>
+            </div>
+          </div>
+          <div class="check-3pNjIz">
+            <div class="check-T5GdzY"></div>
+            <div class="vector-T5GdzY"></div>
+            <div class="vector-xJUAYQ"></div>
+          </div>
+        </div>
+        <div class="search-overlay-C61RwL">
+          <div class="rectangle-1694-na8HxU"></div>
+          <div class="rectangle-1693-na8HxU"></div>
+          <div class="rectangle-1692-na8HxU"></div>
+          <div class="rectangle-1691-na8HxU"></div>
+          <div class="rectangle-1690-na8HxU"></div>
+          <div class="rectangle-1689-na8HxU"></div>
+          <div class="rectangle-1688-na8HxU"></div>
+          <div class="rectangle-1687-na8HxU"></div>
+          <div class="mens-recents-na8HxU">
+            <div class="rectangle-365-V4zynX"></div>
+            <div class="rectangle-401-V4zynX"></div>
+            <div class="group-1551-V4zynX">
+              <div class="ellipse-294-AjiN2Z"></div>
+              <div class="vector-AjiN2Z"></div>
+            </div>
+            <div class="group-1552-V4zynX">
+              <div class="ellipse-294-SMhatI"></div>
+              <div class="vector-SMhatI"></div>
+            </div>
+            <div class="hardly-used-af1-V4zynX valign-text-middle">Hardly Used AF1</div>
+            <div class="red-beanie-nwt-V4zynX valign-text-middle">Red Beanie NWT</div>
+            <div class="x2000-V4zynX valign-text-middle">$20.00</div>
+            <div class="x500-V4zynX valign-text-middle">$5.00</div>
+            <div class="x100-V4zynX valign-text-middle">$100</div>
+            <div class="x25-V4zynX valign-text-middle">$25</div>
+          </div>
+          <div
+            class="see-all-na8HxU valign-text-middle"
+            onclick="Lib.autoanim_redirect('%2A,loading-32%23recent-views-page-1,,ease-in,300.00001192092896', event)"
+          >
+            See all
+          </div>
+          <div class="women-na8HxU valign-text-middle">Women</div>
+          <div class="men-na8HxU valign-text-middle">Men</div>
+          <div class="kids-na8HxU valign-text-middle">Kids</div>
+          <div class="beauty-wellness-na8HxU valign-text-middle">Beauty &amp; Wellness</div>
+          <div class="luxury-na8HxU valign-text-middle">Luxury</div>
+          <div class="boutiques-na8HxU valign-text-middle">Boutiques</div>
+          <div class="plus-size-na8HxU valign-text-middle">Plus Size</div>
+          <div class="home-na8HxU valign-text-middle">Home</div>
+          <div class="icons8-female-user-64-1-na8HxU"></div>
+          <div class="icons8-user-male-64-1-na8HxU"></div>
+          <div class="icons8-christmas-kid-64-1-na8HxU"></div>
+          <div class="icons8-bag-64-1-na8HxU"></div>
+          <div class="icons8-home-64-1-na8HxU"></div>
+          <div class="icons8-makeup-64-1-na8HxU"></div>
+          <div class="icons8-plus-64-1-na8HxU"></div>
+          <div class="icons8-shop-64-1-na8HxU"></div>
+          <div class="search-by-na8HxU valign-text-middle">Search By:</div>
+          <div class="frame-4-na8HxU">
+            <div class="group-IFDpTV">
+              <div class="vector-0VDYkp"></div>
+            </div>
+          </div>
+          <div class="rectangle-1695-na8HxU"></div>
+          <div class="search-na8HxU valign-text-middle">Search</div>
+          <div class="nike-sneakers-na8HxU valign-text-middle">Nike Sneakers</div>
+          <div class="mens-shoes-na8HxU valign-text-middle">Men’s Shoes</div>
+          <div class="running-shoes-na8HxU valign-text-middle">Running Shoes</div>
+          <div class="adidas-sweatshirt-na8HxU valign-text-middle">Adidas Sweatshirt</div>
+          <div class="vector-10-na8HxU"></div>
+          <div class="vector-8-na8HxU"></div>
+          <div class="vector-9-na8HxU"></div>
+          <div class="recent-views-na8HxU valign-text-middle">Recent Views</div>
+          <a href="javascript:HideOverlay('search', 'animate-disappear');">
+            <div class="x-na8HxU">
+              <div class="vector-WZmxNw"></div>
+              <div class="vector-nZaEQ4"></div></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      "use strict";
+
+      function _toConsumableArray(arr) {
+        return (
+          _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread()
+        );
+      }
+
+      function _nonIterableSpread() {
+        throw new TypeError(
+          "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+        );
+      }
+
+      function _iterableToArray(iter) {
+        if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+      }
+
+      function _arrayWithoutHoles(arr) {
+        if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+      }
+
+      function ownKeys(object, enumerableOnly) {
+        var keys = Object.keys(object);
+        if (Object.getOwnPropertySymbols) {
+          var symbols = Object.getOwnPropertySymbols(object);
+          if (enumerableOnly)
+            symbols = symbols.filter(function (sym) {
+              return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+          keys.push.apply(keys, symbols);
+        }
+        return keys;
+      }
+
+      function _objectSpread(target) {
+        for (var i = 1; i < arguments.length; i++) {
+          var source = arguments[i] != null ? arguments[i] : {};
+          if (i % 2) {
+            ownKeys(Object(source), true).forEach(function (key) {
+              _defineProperty(target, key, source[key]);
+            });
+          } else if (Object.getOwnPropertyDescriptors) {
+            Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+          } else {
+            ownKeys(Object(source)).forEach(function (key) {
+              Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+            });
+          }
+        }
+        return target;
+      }
+
+      function _defineProperty(obj, key, value) {
+        if (key in obj) {
+          Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
+        } else {
+          obj[key] = value;
+        }
+        return obj;
+      }
+
+      function _createForOfIteratorHelper(o, allowArrayLike) {
+        var it;
+        if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+          if (
+            Array.isArray(o) ||
+            (it = _unsupportedIterableToArray(o)) ||
+            (allowArrayLike && o && typeof o.length === "number")
+          ) {
+            if (it) o = it;
+            var i = 0;
+            var F = function F() {};
+            return {
+              s: F,
+              n: function n() {
+                if (i >= o.length) return { done: true };
+                return { done: false, value: o[i++] };
+              },
+              e: function e(_e2) {
+                throw _e2;
+              },
+              f: F,
+            };
+          }
+          throw new TypeError(
+            "Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+          );
+        }
+        var normalCompletion = true,
+          didErr = false,
+          err;
+        return {
+          s: function s() {
+            it = o[Symbol.iterator]();
+          },
+          n: function n() {
+            var step = it.next();
+            normalCompletion = step.done;
+            return step;
+          },
+          e: function e(_e3) {
+            didErr = true;
+            err = _e3;
+          },
+          f: function f() {
+            try {
+              if (!normalCompletion && it["return"] != null) it["return"]();
+            } finally {
+              if (didErr) throw err;
+            }
+          },
+        };
+      }
+
+      function _slicedToArray(arr, i) {
+        return (
+          _arrayWithHoles(arr) ||
+          _iterableToArrayLimit(arr, i) ||
+          _unsupportedIterableToArray(arr, i) ||
+          _nonIterableRest()
+        );
+      }
+
+      function _nonIterableRest() {
+        throw new TypeError(
+          "Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+        );
+      }
+
+      function _unsupportedIterableToArray(o, minLen) {
+        if (!o) return;
+        if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+        var n = Object.prototype.toString.call(o).slice(8, -1);
+        if (n === "Object" && o.constructor) n = o.constructor.name;
+        if (n === "Map" || n === "Set") return Array.from(o);
+        if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))
+          return _arrayLikeToArray(o, minLen);
+      }
+
+      function _arrayLikeToArray(arr, len) {
+        if (len == null || len > arr.length) len = arr.length;
+        for (var i = 0, arr2 = new Array(len); i < len; i++) {
+          arr2[i] = arr[i];
+        }
+        return arr2;
+      }
+
+      function _iterableToArrayLimit(arr, i) {
+        if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+        var _arr = [];
+        var _n = true;
+        var _d = false;
+        var _e = undefined;
+        try {
+          for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+          }
+        } catch (err) {
+          _d = true;
+          _e = err;
+        } finally {
+          try {
+            if (!_n && _i["return"] != null) _i["return"]();
+          } finally {
+            if (_d) throw _e;
+          }
+        }
+        return _arr;
+      }
+
+      function _arrayWithHoles(arr) {
+        if (Array.isArray(arr)) return arr;
+      }
+
+      (function () {
+        var sides_opposites = {
+          left: "right",
+          right: "left",
+          top: "bottom",
+          bottom: "top",
+        };
+        var sides_containers = {
+          left: "width",
+          right: "width",
+          top: "height",
+          bottom: "height",
+        };
+        var containers = ["height", "width"];
+        var autoanimated_properties = [
+          "left",
+          "right",
+          "top",
+          "bottom",
+          "width",
+          "height",
+          "background-color",
+          "color",
+          "font-size",
+          "line-height",
+          "letter-spacing",
+          "border",
+          "border-size",
+          "border-color",
+          "margin",
+          "margin-right",
+          "margin-left",
+          "margin-top",
+          "margin-bottom",
+          "opacity",
+          "font-family",
+          "transform",
+          "rotate",
+        ];
+        var autoanimated_properties_from_zero = ["opacity", "rotate"];
+        var last_set_hash = "";
+
+        function normalize_to_percent_and_offset(value) {
+          var percent = 0.0;
+          var pixel_offset = 0;
+          var calc_match = value.match(/calc\(\s*([0-9.]*)%\s*([-+])\s*([0-9]*)px/);
+
+          if (calc_match) {
+            percent = parseFloat(calc_match[1]);
+            pixel_offset = parseInt(calc_match[3]);
+
+            if (calc_match[2] === "-") {
+              pixel_offset = -pixel_offset;
+            }
+          } else if (String(value).includes("%")) {
+            percent = parseFloat(value.replace("%", ""));
+          } else {
+            pixel_offset = parseInt(value, 10);
+          }
+
+          return {
+            percent: percent,
+            pixel_offset: pixel_offset,
+          };
+        }
+
+        function to_relative_percent(element, property, value) {
+          var offsetParent = element.offsetParent;
+
+          if (!offsetParent) {
+            return 0;
+          }
+
+          var target_style_property = property;
+
+          if (sides_containers.hasOwnProperty(property)) {
+            target_style_property = sides_containers[property];
+          }
+
+          var parent_size = Math.max(1, parseInt(getComputedStyle(offsetParent)[target_style_property], 10));
+          return parseFloat((100 * value) / parent_size);
+        }
+
+        function convert_to_matching_positioning(element, new_props) {
+          var computed_element_style = getComputedStyle(element);
+          Object.entries(new_props).forEach(function (_ref) {
+            var _ref2 = _slicedToArray(_ref, 2),
+              property = _ref2[0],
+              value = _ref2[1];
+
+            if (sides_opposites.hasOwnProperty(property)) {
+              var to_percent = String(value).includes("%");
+              var new_prop_value =
+                parseInt(computed_element_style[property], 10) +
+                parseInt(computed_element_style["margin-" + property], 10);
+
+              if (to_percent) {
+                new_prop_value = to_relative_percent(element, property, new_prop_value).toFixed(4) + "%";
+              } else {
+                new_prop_value += "px";
+              }
+
+              element.style[property] = new_prop_value;
+              element.style["margin-" + property] = 0;
+              element.style["margin-" + sides_opposites[property]] = 0;
+
+              if (element.style[sides_opposites[property]]) {
+                element.style[sides_opposites[property]] = "auto";
+              }
+            } else if (containers.includes(property)) {
+              var _to_percent = String(value).includes("%");
+
+              var _new_prop_value = parseInt(computed_element_style[property]);
+
+              if (_to_percent) {
+                _new_prop_value = to_relative_percent(element, property, _new_prop_value).toFixed(4) + "%";
+              } else {
+                _new_prop_value += "px";
+              }
+
+              element.style[property] = _new_prop_value;
+            }
+          });
+        }
+
+        function setup_listener(root_element, listener_specs, event_handler) {
+          var cleaner = null;
+
+          if (listener_specs.listener_type === "timer") {
+            var timeout = setTimeout(event_handler, listener_specs.delay);
+
+            cleaner = function cleaner() {
+              return clearTimeout(timeout);
+            };
+          } else if (["click", "mouseenter", "mouseleave"].includes(listener_specs.listener_type)) {
+            var target_element =
+              listener_specs.target_selector === ""
+                ? root_element
+                : root_element.querySelector(listener_specs.target_selector);
+
+            if (!target_element) {
+              return function () {};
+            }
+
+            var event_handler_fixed = function event_handler_fixed(event) {
+              if (event.type === "click" || event.target === target_element) {
+                event.stopPropagation();
+                event_handler();
+              }
+            };
+
+            target_element.classList.add("listeners-active");
+
+            if (listener_specs.listener_type === "click") {
+              target_element.classList.add("listeners-active-click");
+            }
+
+            target_element.addEventListener(listener_specs.listener_type, event_handler_fixed, true);
+
+            cleaner = function cleaner() {
+              target_element.removeEventListener(listener_specs.listener_type, event_handler_fixed, true);
+              target_element.classList.remove("listeners-active");
+              target_element.classList.remove("listeners-active-click");
+            };
+          }
+
+          return cleaner;
+        }
+
+        function animate_elements(root_element, selector_to_properties_map, transition_props, on_done) {
+          var from_current_position = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : true;
+          var hide_low_opacity = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : true;
+          var entries = selector_to_properties_map.entries
+            ? selector_to_properties_map.entries()
+            : Object.entries(selector_to_properties_map);
+
+          var _iterator = _createForOfIteratorHelper(entries),
+            _step;
+
+          try {
+            var _loop = function _loop() {
+              var _step$value = _slicedToArray(_step.value, 2),
+                selector_or_element = _step$value[0],
+                prop_values_map = _step$value[1];
+
+              var element = root_element;
+
+              if (typeof selector_or_element === "string") {
+                if (selector_or_element !== "") {
+                  element = root_element.querySelector(selector_or_element);
+                }
+              } else {
+                element = selector_or_element;
+              }
+
+              if (element) {
+                var update_element_visibility = function update_element_visibility(visible) {
+                  if (visible) {
+                    element.classList.toggle("hidden", false);
+                  } else {
+                    element.classList.toggle("hidden", true);
+                  }
+                };
+
+                if (hide_low_opacity) {
+                  update_element_visibility(
+                    prop_values_map["opacity"] > 0 || getComputedStyle(element).opacity > 0.001
+                  );
+                }
+
+                anime.remove(element);
+
+                var full_params = _objectSpread(
+                  _objectSpread(_objectSpread({}, transition_props), prop_values_map),
+                  {},
+                  {
+                    targets: [element],
+                    complete: function complete() {
+                      if (hide_low_opacity) {
+                        update_element_visibility(getComputedStyle(element).opacity > 0.001);
+                      }
+
+                      if (on_done) {
+                        on_done(element);
+                      }
+                    },
+                  }
+                );
+
+                if (prop_values_map.hasOwnProperty("transform")) {
+                  var transform_val = full_params.transform;
+                  delete full_params.transform;
+
+                  if (!Array.isArray(transform_val)) {
+                    transform_val
+                      .match(/\S*\([^)]*/g)
+                      .map(function (x) {
+                        return x.split("(");
+                      })
+                      .forEach(function (_ref3) {
+                        var _ref4 = _slicedToArray(_ref3, 2),
+                          key = _ref4[0],
+                          val = _ref4[1];
+
+                        full_params[key] = val;
+                      });
+                  }
+                }
+
+                if (full_params.hasOwnProperty("easing")) {
+                  var mapping = {
+                    "": "linear",
+                    none: "linear",
+                    bounce: "easeOutBounce",
+                    "wind-up": "cubicBezier(0.4, -0.25, 0.8, 0.8)",
+                    snap: "cubicBezier(0.8, 0.85, 0.7, 1.15)",
+                    "ease-in-out": "cubicBezier(0.42, 0, 0.58, 1)",
+                    "ease-in": "cubicBezier(0.42, 0, 1, 1)",
+                    "ease-out": "cubicBezier(0, 0, 0.58, 1)",
+                  };
+                  var easing = full_params["easing"].trim().toLowerCase();
+
+                  if (mapping.hasOwnProperty(easing)) {
+                    easing = mapping[easing];
+                  } else if (easing.startsWith("cubic-bezier")) {
+                    easing = easing.replace("cubic-bezier", "cubicBezier");
+                  }
+
+                  full_params["easing"] = easing;
+                }
+
+                if (from_current_position) {
+                  convert_to_matching_positioning(element, full_params);
+                  Object.keys(sides_opposites).forEach(function (side) {
+                    if (full_params.hasOwnProperty(side)) {
+                      var value = full_params[side];
+
+                      var _normalize_to_percent = normalize_to_percent_and_offset(value),
+                        percent = _normalize_to_percent.percent,
+                        pixel_offset = _normalize_to_percent.pixel_offset;
+
+                      if (Math.abs(percent) < 0.001) {
+                        full_params[side] = pixel_offset + "px";
+                      } else {
+                        full_params[side] = percent + "%";
+                        full_params["margin-" + side] = pixel_offset + "px";
+                      }
+
+                      element.style[sides_opposites[side]] = "auto";
+                    }
+                  });
+                  containers.forEach(function (container) {
+                    if (full_params.hasOwnProperty(container)) {
+                      var value = full_params[container];
+
+                      var _normalize_to_percent2 = normalize_to_percent_and_offset(value),
+                        percent = _normalize_to_percent2.percent,
+                        pixel_offset = _normalize_to_percent2.pixel_offset;
+
+                      if (Math.abs(percent) < 0.001) {
+                        full_params[container] = pixel_offset + "px";
+                      } else {
+                        if (Math.abs(pixel_offset) > 0) {
+                          percent += to_relative_percent(element, container, pixel_offset);
+                          percent = Math.max(0, percent);
+                        }
+
+                        full_params[container] = percent + "%";
+                      }
+                    }
+                  });
+                }
+
+                anime(full_params);
+              }
+            };
+
+            for (_iterator.s(); !(_step = _iterator.n()).done; ) {
+              _loop();
+            }
+          } catch (err) {
+            _iterator.e(err);
+          } finally {
+            _iterator.f();
+          }
+        }
+
+        function timeline_get_changed_properties_between_states(
+          initial_element_state,
+          from_state_element_state,
+          to_state_element_state
+        ) {
+          var selector_to_props = {};
+          Object.entries(from_state_element_state).forEach(function (_ref5) {
+            var _ref6 = _slicedToArray(_ref5, 2),
+              selector = _ref6[0],
+              properties = _ref6[1];
+
+            selector_to_props[selector] = selector_to_props[selector] || {};
+            Object.entries(properties).forEach(function (_ref7) {
+              var _ref8 = _slicedToArray(_ref7, 2),
+                property = _ref8[0],
+                value = _ref8[1];
+
+              selector_to_props[selector][property] = initial_element_state[selector][property];
+            });
+          });
+          Object.entries(to_state_element_state).forEach(function (_ref9) {
+            var _ref10 = _slicedToArray(_ref9, 2),
+              selector = _ref10[0],
+              properties = _ref10[1];
+
+            selector_to_props[selector] = selector_to_props[selector] || {};
+            Object.entries(properties).forEach(function (_ref11) {
+              var _ref12 = _slicedToArray(_ref11, 2),
+                property = _ref12[0],
+                value = _ref12[1];
+
+              selector_to_props[selector][property] = value;
+            });
+          });
+          return selector_to_props;
+        }
+
+        function timeline_transitioning_to_state(
+          root_element,
+          initial_properties,
+          states_flow,
+          now_state_name,
+          transition_animation_time
+        ) {
+          var new_state_flow = states_flow[now_state_name];
+          var listener_cleanup_callbacks = [];
+
+          var _iterator2 = _createForOfIteratorHelper(new_state_flow.listeners),
+            _step2;
+
+          try {
+            var _loop2 = function _loop2() {
+              var listener_specs = _step2.value;
+
+              function on_listener_run() {
+                listener_cleanup_callbacks.forEach(function (callback) {
+                  return callback();
+                });
+                listener_cleanup_callbacks = [];
+                var next_state_name = listener_specs.change_to_state;
+                var this_state_element_state = states_flow[now_state_name].overrides;
+                var next_state_element_state = states_flow[next_state_name].overrides;
+                var element_selector_to_changed_properties = timeline_get_changed_properties_between_states(
+                  initial_properties,
+                  this_state_element_state,
+                  next_state_element_state
+                );
+                var longest_animation_time_ms = 0;
+                Object.entries(listener_specs.animations).forEach(function (_ref13) {
+                  var _ref14 = _slicedToArray(_ref13, 2),
+                    selector = _ref14[0],
+                    animation_specs = _ref14[1];
+
+                  var filtered_props = {};
+
+                  if (element_selector_to_changed_properties.hasOwnProperty(selector)) {
+                    filtered_props[selector] = element_selector_to_changed_properties[selector];
+                    longest_animation_time_ms = Math.max(
+                      longest_animation_time_ms,
+                      animation_specs.delay + animation_specs.duration
+                    );
+                    animate_elements(root_element, filtered_props, animation_specs);
+                  }
+                });
+                timeline_transitioning_to_state(
+                  root_element,
+                  initial_properties,
+                  states_flow,
+                  next_state_name,
+                  longest_animation_time_ms
+                );
+              }
+
+              var final_listener_specs = _objectSpread({}, listener_specs);
+
+              if (listener_specs.listener_type === "timer") {
+                final_listener_specs.delay += transition_animation_time;
+              }
+
+              var cleanup_callback = setup_listener(root_element, final_listener_specs, on_listener_run);
+              listener_cleanup_callbacks.push(cleanup_callback);
+            };
+
+            for (_iterator2.s(); !(_step2 = _iterator2.n()).done; ) {
+              _loop2();
+            }
+          } catch (err) {
+            _iterator2.e(err);
+          } finally {
+            _iterator2.f();
+          }
+        }
+
+        function run_when_doc_ready(fn) {
+          if (!document.getElementById("anime-js-script")) {
+            var animejs_element = document.createElement("script");
+            animejs_element.id = "anime-js-script";
+            animejs_element.setAttribute("src", "https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js");
+            animejs_element.setAttribute("integrity", "sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8=");
+            animejs_element.setAttribute("crossorigin", "anonymous");
+            document.head.appendChild(animejs_element);
+          }
+
+          if (!document.getElementById("imgloaded-js-script")) {
+            var imgloaded_element = document.createElement("script");
+            imgloaded_element.id = "imgloaded-js-script";
+            imgloaded_element.setAttribute("src", "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js");
+            document.head.appendChild(imgloaded_element);
+          }
+
+          if (window.anime === undefined || window.imagesLoaded === undefined) {
+            setTimeout(function () {
+              return run_when_doc_ready(fn);
+            }, 50);
+            return;
+          }
+
+          if (document.readyState === "complete" || document.readyState === "interactive") {
+            setTimeout(fn, 1);
+          } else {
+            document.addEventListener("DOMContentLoaded", fn);
+          }
+        }
+
+        function timeline_load_initial_values(components) {
+          components.forEach(function (component) {
+            var root_element = document.querySelector(component.root_element);
+            var states_flow = component.states_flow;
+            var initial_state_name = component.initial_state_name;
+            var initial_properties = {};
+            Object.values(component.states_flow).forEach(function (state_spec) {
+              Object.entries(state_spec.overrides).forEach(function (_ref15) {
+                var _ref16 = _slicedToArray(_ref15, 2),
+                  selector = _ref16[0],
+                  properties = _ref16[1];
+
+                initial_properties[selector] = initial_properties[selector] || {};
+                var element = selector === "" ? root_element : root_element.querySelector(selector);
+                Object.keys(properties).forEach(function (property) {
+                  initial_properties[selector][property] =
+                    element.style[property] ||
+                    (property === "transform" && "rotate(0deg)") ||
+                    window.getComputedStyle(element)[property];
+                });
+              });
+            });
+            Object.entries(component.states_flow[initial_state_name].overrides).forEach(function (_ref17) {
+              var _ref18 = _slicedToArray(_ref17, 2),
+                selector = _ref18[0],
+                properties = _ref18[1];
+
+              var element = selector === "" ? root_element : root_element.querySelector(selector);
+              animate_elements(
+                element,
+                {
+                  "": properties,
+                },
+                {
+                  duration: 0,
+                }
+              );
+            });
+            timeline_transitioning_to_state(root_element, initial_properties, states_flow, initial_state_name, 0);
+          });
+          document.querySelectorAll(".not-ready").forEach(function (x) {
+            return x.classList.remove("not-ready");
+          });
+        }
+
+        function autoanim_get_current_view() {
+          var hash = window.location.hash && window.location.hash.slice(1);
+          var screen_element = document.querySelector(".screen");
+          var screens_slugs = screen_element.getAttribute("data-screens").split(",");
+          var page = screen_element.getAttribute("data-page");
+
+          if (screens_slugs.indexOf(hash) !== -1) {
+            return [page, hash];
+          }
+
+          var _iterator3 = _createForOfIteratorHelper(screens_slugs),
+            _step3;
+
+          try {
+            for (_iterator3.s(); !(_step3 = _iterator3.n()).done; ) {
+              var slug = _step3.value;
+
+              if (screen_element.classList.contains(slug)) {
+                return [page, slug];
+              }
+            }
+          } catch (err) {
+            _iterator3.e(err);
+          } finally {
+            _iterator3.f();
+          }
+
+          return [page, page];
+        }
+
+        function autoanim_redirect(specs, event) {
+          var actions = specs.split(";");
+
+          var _autoanim_get_current = autoanim_get_current_view(),
+            _autoanim_get_current2 = _slicedToArray(_autoanim_get_current, 2),
+            page = _autoanim_get_current2[0],
+            current_screen = _autoanim_get_current2[1];
+
+          var _iterator4 = _createForOfIteratorHelper(actions),
+            _step4;
+
+          try {
+            for (_iterator4.s(); !(_step4 = _iterator4.n()).done; ) {
+              var action = _step4.value;
+
+              var _action$split = action.split(","),
+                _action$split2 = _slicedToArray(_action$split, 5),
+                from_screen = _action$split2[0],
+                target_url = _action$split2[1],
+                link_target_attribute = _action$split2[2],
+                easing = _action$split2[3],
+                duration = _action$split2[4];
+
+              from_screen = decodeURIComponent(from_screen);
+              target_url = decodeURIComponent(target_url);
+              duration = parseInt(duration, 10);
+
+              if (from_screen === "*" || from_screen === current_screen) {
+                var js_run = target_url.match(/\s*javascript\:(.*)/);
+
+                if (js_run) {
+                  eval(js_run[1]);
+                  event.stopPropagation();
+                  return false;
+                } else if (target_url.indexOf(page + "#") === 0) {
+                  autoanim_change_to_screen(current_screen, target_url.split("#")[1], easing, duration);
+                  event.stopPropagation();
+                  return false;
+                } else {
+                  window.open(target_url, link_target_attribute);
+                  event.stopPropagation();
+                  return false;
+                }
+              }
+            }
+          } catch (err) {
+            _iterator4.e(err);
+          } finally {
+            _iterator4.f();
+          }
+
+          return false;
+        }
+
+        function autoanim_reorder_by_z_indexes() {
+          var parents_contained_z_values = new Map();
+          var children_z = new Map();
+
+          var _iterator5 = _createForOfIteratorHelper(document.querySelectorAll(".screen[data-screens] *")),
+            _step5;
+
+          try {
+            for (_iterator5.s(); !(_step5 = _iterator5.n()).done; ) {
+              var element = _step5.value;
+              var computed_style = getComputedStyle(element);
+
+              if (["br", "#text", "#comment", "svg"].includes(element.nodeName && element.nodeName.toLowerCase())) {
+                continue;
+              }
+
+              var z = parseInt(computed_style.getPropertyValue("--z-index"));
+
+              if (z !== -1) {
+                if (!parents_contained_z_values.has(element.parentNode)) {
+                  parents_contained_z_values.set(element.parentNode, {});
+                }
+
+                var parent_z_values = parents_contained_z_values.get(element.parentNode);
+                parent_z_values[z] = true;
+                children_z.set(element, z);
+              }
+            }
+          } catch (err) {
+            _iterator5.e(err);
+          } finally {
+            _iterator5.f();
+          }
+
+          var _iterator6 = _createForOfIteratorHelper(parents_contained_z_values.entries()),
+            _step6;
+
+          try {
+            for (_iterator6.s(); !(_step6 = _iterator6.n()).done; ) {
+              var comparator = function comparator(a, b) {
+                var a_z = children_z.has(a) ? parseInt(children_z.get(a)) : -1;
+                var b_z = children_z.has(b) ? parseInt(children_z.get(b)) : -1;
+
+                if (a_z > b_z) {
+                  return 1;
+                } else if (a_z < b_z) {
+                  return -1;
+                }
+
+                return 0;
+              };
+
+              var _step6$value = _slicedToArray(_step6.value, 2),
+                parent = _step6$value[0],
+                z_values = _step6$value[1];
+
+              if (Object.keys(z_values).length <= 1) {
+                continue;
+              }
+
+              var children_sorted = _toConsumableArray(parent.children);
+
+              children_sorted.sort(comparator);
+
+              var _iterator7 = _createForOfIteratorHelper(children_sorted),
+                _step7;
+
+              try {
+                for (_iterator7.s(); !(_step7 = _iterator7.n()).done; ) {
+                  var child = _step7.value;
+                  parent.appendChild(child);
+                }
+              } catch (err) {
+                _iterator7.e(err);
+              } finally {
+                _iterator7.f();
+              }
+            }
+          } catch (err) {
+            _iterator6.e(err);
+          } finally {
+            _iterator6.f();
+          }
+        }
+
+        function autoanim_change_to_screen(current_slug, target_slug, easing, duration) {
+          var push_history = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : true;
+          var screen_node = document.querySelector(".screen[data-screens]");
+
+          if (screen_node.current_timed_transition) {
+            window.clearTimeout(screen_node.current_timed_transition);
+            screen_node.current_timed_transition = null;
+          }
+
+          var autoanim_data = screen_node.autoanim;
+          var new_styles = autoanim_data[target_slug];
+          var old_styles = autoanim_data[current_slug];
+
+          if (duration) {
+            var per_element_animated_props = new Map();
+            var all_elements = new Set(
+              [].concat(_toConsumableArray(new_styles.keys()), _toConsumableArray(old_styles.keys()))
+            );
+
+            var _iterator8 = _createForOfIteratorHelper(all_elements.values()),
+              _step8;
+
+            try {
+              for (_iterator8.s(); !(_step8 = _iterator8.n()).done; ) {
+                var element = _step8.value;
+                var new_element_style = new_styles.get(element);
+                var old_element_style = old_styles.get(element);
+
+                if (!new_element_style && !old_element_style) {
+                  continue;
+                }
+
+                var this_element_animated_props = {};
+
+                var _iterator9 = _createForOfIteratorHelper(autoanimated_properties),
+                  _step9;
+
+                try {
+                  for (_iterator9.s(); !(_step9 = _iterator9.n()).done; ) {
+                    var prop = _step9.value;
+                    var new_value =
+                      new_element_style === null || new_element_style === void 0 ? void 0 : new_element_style[prop];
+                    var old_value =
+                      old_element_style === null || old_element_style === void 0 ? void 0 : old_element_style[prop];
+
+                    if (new_value == null && old_value == null) {
+                      continue;
+                    }
+
+                    if (autoanimated_properties_from_zero.includes(prop)) {
+                      new_value = new_value || 0;
+                      old_value = old_value || 0;
+                    } else {
+                      new_value = new_value !== undefined ? new_value : old_value;
+                      old_value = old_value !== undefined ? old_value : new_value;
+                    }
+
+                    this_element_animated_props[prop] = [old_value, new_value];
+                  }
+                } catch (err) {
+                  _iterator9.e(err);
+                } finally {
+                  _iterator9.f();
+                }
+
+                if (Object.keys(this_element_animated_props).length !== 0) {
+                  per_element_animated_props.set(element, this_element_animated_props);
+                }
+              }
+            } catch (err) {
+              _iterator8.e(err);
+            } finally {
+              _iterator8.f();
+            }
+
+            var has_reordered = false;
+            var root_element = document.querySelector(".screen");
+            animate_elements(
+              root_element,
+              per_element_animated_props,
+              {
+                duration: duration,
+                easing: easing,
+              },
+              function (element) {
+                element.removeAttribute("style");
+
+                if (!has_reordered) {
+                  autoanim_reorder_by_z_indexes();
+                  has_reordered = true;
+                }
+              },
+              false,
+              false
+            );
+          } else {
+            setTimeout(autoanim_reorder_by_z_indexes);
+          }
+
+          var screen_element = document.querySelector(".screen");
+          var screens_slugs = screen_element.getAttribute("data-screens").split(",");
+
+          var _iterator10 = _createForOfIteratorHelper(screens_slugs),
+            _step10;
+
+          try {
+            for (_iterator10.s(); !(_step10 = _iterator10.n()).done; ) {
+              var slug = _step10.value;
+              screen_element.classList.toggle(slug, slug === target_slug);
+            }
+          } catch (err) {
+            _iterator10.e(err);
+          } finally {
+            _iterator10.f();
+          }
+
+          last_set_hash = "#" + target_slug;
+
+          if (history.pushState && current_slug && push_history) {
+            history.pushState(null, null, last_set_hash);
+          } else if (push_history) {
+            location.hash = last_set_hash;
+          } else {
+            window.location.replace(("" + window.location).split("#")[0] + last_set_hash);
+          }
+
+          var timed_transitions = screen_node.getAttribute("data-transitions");
+
+          if (timed_transitions) {
+            var _iterator11 = _createForOfIteratorHelper(timed_transitions.split(";")),
+              _step11;
+
+            try {
+              var _loop3 = function _loop3() {
+                var transition = _step11.value;
+
+                var _transition$split = transition.split(","),
+                  _transition$split2 = _slicedToArray(_transition$split, 5),
+                  transition_from_screen = _transition$split2[0],
+                  transition_to_screen = _transition$split2[1],
+                  delay = _transition$split2[2],
+                  easing = _transition$split2[3],
+                  duration_next = _transition$split2[4];
+
+                delay = parseInt(delay, 10);
+                easing = decodeURIComponent(easing);
+
+                if (target_slug === transition_from_screen) {
+                  if (duration) {
+                    delay += duration;
+                  }
+
+                  var delayed_exec_cb = function delayed_exec_cb() {
+                    screen_node.current_timed_transition = setTimeout(function () {
+                      autoanim_change_to_screen(
+                        transition_from_screen,
+                        transition_to_screen,
+                        easing,
+                        parseInt(duration_next, 10),
+                        false
+                      );
+                    }, Math.max(delay, 1));
+                    window.Lib.imagesLoadedFinished = true;
+                  };
+
+                  if (window.Lib.imagesLoadedFinished) {
+                    delayed_exec_cb();
+                  } else {
+                    imagesLoaded(
+                      ".screen *",
+                      {
+                        background: true,
+                      },
+                      delayed_exec_cb
+                    );
+                  }
+
+                  return "break";
+                }
+              };
+
+              for (_iterator11.s(); !(_step11 = _iterator11.n()).done; ) {
+                var _ret = _loop3();
+
+                if (_ret === "break") break;
+              }
+            } catch (err) {
+              _iterator11.e(err);
+            } finally {
+              _iterator11.f();
+            }
+          }
+        }
+
+        function transform_matrix_to_rotation(matrix_str) {
+          if (!matrix_str) {
+            return 0;
+          }
+
+          var split = matrix_str.split(/,|\(/);
+
+          if (!split || split.length !== 7) {
+            return 0;
+          }
+
+          var a = parseFloat(split[1]);
+          var b = parseFloat(split[2]);
+          return Math.round(Math.atan2(b, a) * (180 / Math.PI));
+        }
+
+        function autoanim_collect_styles(root_element) {
+          var css_by_screen = {};
+          var screens_slugs = root_element.getAttribute("data-screens").split(",");
+
+          var _iterator12 = _createForOfIteratorHelper(screens_slugs),
+            _step12;
+
+          try {
+            for (_iterator12.s(); !(_step12 = _iterator12.n()).done; ) {
+              var target_slug = _step12.value;
+
+              var _iterator13 = _createForOfIteratorHelper(screens_slugs),
+                _step13;
+
+              try {
+                for (_iterator13.s(); !(_step13 = _iterator13.n()).done; ) {
+                  var slug = _step13.value;
+                  root_element.classList.toggle(slug, slug === target_slug);
+                }
+              } catch (err) {
+                _iterator13.e(err);
+              } finally {
+                _iterator13.f();
+              }
+
+              css_by_screen[target_slug] = new Map();
+
+              var _iterator14 = _createForOfIteratorHelper(root_element.querySelectorAll("*")),
+                _step14;
+
+              try {
+                for (_iterator14.s(); !(_step14 = _iterator14.n()).done; ) {
+                  var animated_obj = _step14.value;
+                  var computed_style = getComputedStyle(animated_obj);
+
+                  if (computed_style.backgroundImage !== "none") {
+                    var pic = new Image();
+                    pic.src = computed_style.backgroundImage;
+                  }
+
+                  var zindex = parseInt(computed_style.getPropertyValue("--z-index"));
+
+                  if (zindex === -1) {
+                    continue;
+                  }
+
+                  var autoanim_props = {};
+
+                  var _iterator15 = _createForOfIteratorHelper(autoanimated_properties),
+                    _step15;
+
+                  try {
+                    for (_iterator15.s(); !(_step15 = _iterator15.n()).done; ) {
+                      var prop = _step15.value;
+                      var val = computed_style.getPropertyValue(prop);
+
+                      if (prop === "transform") {
+                        var rotation = transform_matrix_to_rotation(val);
+
+                        if (rotation) {
+                          autoanim_props["rotate"] = rotation;
+                        }
+                      } else if (val && val !== "none") {
+                        autoanim_props[prop] = computed_style.getPropertyValue(prop);
+                      }
+                    }
+                  } catch (err) {
+                    _iterator15.e(err);
+                  } finally {
+                    _iterator15.f();
+                  }
+
+                  autoanim_props["--z-index"] = zindex;
+                  css_by_screen[target_slug].set(animated_obj, autoanim_props);
+                }
+              } catch (err) {
+                _iterator14.e(err);
+              } finally {
+                _iterator14.f();
+              }
+            }
+          } catch (err) {
+            _iterator12.e(err);
+          } finally {
+            _iterator12.f();
+          }
+
+          root_element.autoanim = css_by_screen;
+        }
+
+        function init_timeline_components() {
+          run_when_doc_ready(function () {
+            var _iterator16 = _createForOfIteratorHelper(document.querySelectorAll(".component-wrapper")),
+              _step16;
+
+            try {
+              for (_iterator16.s(); !(_step16 = _iterator16.n()).done; ) {
+                var element = _step16.value;
+
+                if (element.timeline_data) {
+                  timeline_load_initial_values(element.timeline_data);
+                }
+              }
+            } catch (err) {
+              _iterator16.e(err);
+            } finally {
+              _iterator16.f();
+            }
+          });
+        }
+
+        function init_auto_animate() {
+          var screen_element = document.querySelector(".screen[data-screens]");
+
+          if (!screen_element) {
+            return;
+          }
+
+          screen_element.style.opacity = 0;
+          run_when_doc_ready(function () {
+            var _iterator17 = _createForOfIteratorHelper(document.querySelectorAll(".hidden")),
+              _step17;
+
+            try {
+              for (_iterator17.s(); !(_step17 = _iterator17.n()).done; ) {
+                var element = _step17.value;
+                element.classList.remove("hidden");
+              }
+            } catch (err) {
+              _iterator17.e(err);
+            } finally {
+              _iterator17.f();
+            }
+
+            var screen_element = document.querySelector(".screen[data-screens]");
+            screen_element.style.opacity = 1;
+
+            if (screen_element) {
+              var initial_screen = autoanim_get_current_view()[1];
+              autoanim_collect_styles(screen_element);
+              autoanim_change_to_screen(null, initial_screen);
+
+              window.onhashchange = function () {
+                if (last_set_hash !== location.hash) {
+                  autoanim_change_to_screen(null, autoanim_get_current_view()[1]);
+                }
+              };
+            }
+          });
+        }
+
+        window.Lib = {
+          autoanim_redirect: autoanim_redirect,
+        };
+        setTimeout(init_timeline_components, 0);
+        setTimeout(init_auto_animate, 0);
+      })();
+    </script>
+  </body>
+</html>

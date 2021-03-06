@@ -1,0 +1,688 @@
+/* screen - my-bag-verify-screen */
+
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+.karla-bold-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-bold-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-normal-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-dove-gray-14px {
+  color: var(--dove-gray);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-pixie-powder-14px {
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-star-dust-14px {
+  color: var(--star-dust);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-white-16px {
+  color: var(--white);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.my-bag-verify-screen {
+  background-color: var(--white);
+  height: 1115px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.my-bag-verify-screen .address-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 503px;
+  width: auto;
+}
+.my-bag-verify-screen .appt-C61RwL {
+  background-color: transparent;
+  color: rgba(174,174,174,1.0);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 197px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 675px;
+  width: auto;
+}
+.my-bag-verify-screen .battery-hRp5Ot {
+  background-color: transparent;
+  height: 11px;
+  left: 304px;
+  position: absolute;
+  top: 4px;
+  width: 24px;
+}
+.my-bag-verify-screen .border-NZfiAq {
+  background-color: transparent;
+  height: 11px;
+  left: 0px;
+  opacity: 0.35;
+  position: absolute;
+  top: 0px;
+  width: 22px;
+}
+.my-bag-verify-screen .button-primary-default-C61RwL {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 53px;
+  left: 22px;
+  position: absolute;
+  top: 1018px;
+  width: 333px;
+}
+.my-bag-verify-screen .button-primary-default-GsrA0Q {
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 177px;
+}
+.my-bag-verify-screen .button-text-i368248981537-GsrA0Q {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Karla', Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 151px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: auto;
+}
+.my-bag-verify-screen .cap-NZfiAq {
+  background-color: transparent;
+  height: 4px;
+  left: 23px;
+  position: absolute;
+  top: 4px;
+  width: 2px;
+}
+.my-bag-verify-screen .capacity-NZfiAq {
+  background-color: transparent;
+  height: 8px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 19px;
+}
+.my-bag-verify-screen .cellular-connection-hRp5Ot {
+  background-color: transparent;
+  height: 12px;
+  left: 261px;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+}
+.my-bag-verify-screen .city-town-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 593px;
+  width: auto;
+}
+.my-bag-verify-screen .ellipse-318-C61RwL {
+  background-color: transparent;
+  height: 21px;
+  left: 47px;
+  position: absolute;
+  top: 117px;
+  width: 21px;
+}
+.my-bag-verify-screen .ellipse-319-C61RwL {
+  background-color: transparent;
+  height: 21px;
+  left: 313px;
+  position: absolute;
+  top: 117px;
+  width: 21px;
+}
+.my-bag-verify-screen .ellipse-320-C61RwL {
+  background-color: transparent;
+  height: 21px;
+  left: 180px;
+  position: absolute;
+  top: 117px;
+  width: 21px;
+}
+.my-bag-verify-screen .frame-ASWxeQ {
+  background-color: transparent;
+  height: 44px;
+  left: -0px;
+  position: absolute;
+  top: 0px;
+  width: 376px;
+}
+.my-bag-verify-screen .icon-dropdown-C61RwL {
+  background-color: transparent;
+  height: 24px;
+  left: 17px;
+  position: absolute;
+  top: 55px;
+  transform: rotate(90.00deg);
+  width: 24px;
+}
+.my-bag-verify-screen .icon-dropdown-VMr6Om {
+  background-color: transparent;
+  height: 24px;
+  left: 326px;
+  position: absolute;
+  top: 403px;
+  transform: rotate(-90.00deg);
+  width: 24px;
+}
+.my-bag-verify-screen .line-348-C61RwL {
+  background-color: transparent;
+  height: 1px;
+  left: -6px;
+  position: absolute;
+  top: 936px;
+  width: 381px;
+}
+.my-bag-verify-screen .line-351-C61RwL {
+  background-color: transparent;
+  height: 1px;
+  left: 55px;
+  position: absolute;
+  top: 128px;
+  width: 265px;
+}
+.my-bag-verify-screen .line-352-C61RwL {
+  background-color: transparent;
+  height: 3px;
+  left: 55px;
+  position: absolute;
+  top: 127px;
+  width: 271px;
+}
+.my-bag-verify-screen .my-bag-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Manrope', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  height: 27px;
+  left: 21px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 52px;
+  width: 334px;
+}
+.my-bag-verify-screen .new-jersey-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 223px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 629px;
+  width: 135px;
+}
+.my-bag-verify-screen .order-summary-C61RwL {
+  background-color: transparent;
+  height: 19px;
+  left: 19px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 776px;
+  width: 158px;
+}
+.my-bag-verify-screen .pay-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 153px;
+  width: 29px;
+}
+.my-bag-verify-screen .payment-method-C61RwL {
+  background-color: transparent;
+  height: 19px;
+  left: 21px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 356px;
+  width: 182px;
+}
+.my-bag-verify-screen .qty-1-C61RwL {
+  background-color: transparent;
+  color: rgba(165,165,165,1.0);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: 16px;
+  left: 323px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 226px;
+  width: auto;
+}
+.my-bag-verify-screen .rectangle-1679-C61RwL {
+  background-color: var(--white);
+  height: 45px;
+  left: 21px;
+  position: absolute;
+  top: 392px;
+  width: 334px;
+}
+.my-bag-verify-screen .rectangle-1679-VMr6Om {
+  background-color: var(--white);
+  height: 45px;
+  left: 21px;
+  position: absolute;
+  top: 531px;
+  width: 334px;
+}
+.my-bag-verify-screen .rectangle-1680-C61RwL {
+  background-color: var(--white);
+  height: 45px;
+  left: 22px;
+  position: absolute;
+  top: 613px;
+  width: 157px;
+}
+.my-bag-verify-screen .rectangle-1681-C61RwL {
+  background-color: var(--white);
+  height: 45px;
+  left: 21px;
+  position: absolute;
+  top: 696px;
+  width: 157px;
+}
+.my-bag-verify-screen .rectangle-1682-C61RwL {
+  background-color: var(--white);
+  height: 45px;
+  left: 198px;
+  position: absolute;
+  top: 614px;
+  width: 157px;
+}
+.my-bag-verify-screen .rectangle-1683-C61RwL {
+  background-color: var(--white);
+  height: 45px;
+  left: 198px;
+  position: absolute;
+  top: 698px;
+  width: 157px;
+}
+.my-bag-verify-screen .rectangle-1954-C61RwL {
+  background-color: transparent;
+  height: 105px;
+  left: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 219px;
+  width: 105px;
+}
+.my-bag-verify-screen .ship-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 175px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 153px;
+  width: 34px;
+}
+.my-bag-verify-screen .shipping-address-C61RwL {
+  background-color: transparent;
+  height: 19px;
+  left: 21px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 467px;
+  width: 158px;
+}
+.my-bag-verify-screen .size-l-C61RwL {
+  background-color: transparent;
+  height: 19px;
+  left: 133px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 273px;
+  width: auto;
+}
+.my-bag-verify-screen .state-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 200px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 593px;
+  width: auto;
+}
+.my-bag-verify-screen .status-bar-ASWxeQ {
+  background-color: transparent;
+  height: 18px;
+  left: 32px;
+  position: absolute;
+  top: 12px;
+  width: 329px;
+}
+.my-bag-verify-screen .status-bar-C61RwL {
+  background-color: transparent;
+  height: 44px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 375px;
+}
+.my-bag-verify-screen .sub-total-shipping-charges-tax-C61RwL {
+  background-color: transparent;
+  height: 114px;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: 38.4px;
+  position: absolute;
+  text-align: left;
+  top: 811px;
+  width: 135px;
+}
+.my-bag-verify-screen .talentless-t-shirt-C61RwL {
+  background-color: transparent;
+  height: 38px;
+  left: 135px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 226px;
+  width: 129px;
+}
+.my-bag-verify-screen .time-style-hRp5Ot {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 33px;
+}
+.my-bag-verify-screen .total-C61RwL {
+  background-color: transparent;
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  height: 19px;
+  left: 19px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 949px;
+  width: 98px;
+}
+.my-bag-verify-screen .vector-1yhDCJ {
+  background-color: transparent;
+  height: 1px;
+  left: 11px;
+  position: absolute;
+  top: 5px;
+  width: 1px;
+}
+.my-bag-verify-screen .vector-4lfWTL {
+  background-color: transparent;
+  height: 18px;
+  left: 7px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(90.00deg);
+  width: 10px;
+}
+.my-bag-verify-screen .vector-74sJxh {
+  background-color: transparent;
+  height: 18px;
+  left: 7px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(-90.00deg);
+  width: 10px;
+}
+.my-bag-verify-screen .vector-kvzqpa {
+  background-color: transparent;
+  height: 12px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 23px;
+}
+.my-bag-verify-screen .verify-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 304px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 153px;
+  width: 45px;
+}
+.my-bag-verify-screen .westfield-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 41px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 629px;
+  width: 135px;
+}
+.my-bag-verify-screen .wifi-hRp5Ot {
+  background-color: transparent;
+  height: 12px;
+  left: 283px;
+  position: absolute;
+  top: 4px;
+  width: 17px;
+}
+.my-bag-verify-screen .x07789-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 711px;
+  width: 135px;
+}
+.my-bag-verify-screen .x123-south-street-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 544px;
+  width: 135px;
+}
+.my-bag-verify-screen .x123556345-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 39px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 407px;
+  width: 135px;
+}
+.my-bag-verify-screen .x4400-0-450-C61RwL {
+  background-color: transparent;
+  height: 114px;
+  left: 222px;
+  letter-spacing: 0.00px;
+  line-height: 38.4px;
+  position: absolute;
+  text-align: right;
+  top: 811px;
+  width: 135px;
+}
+.my-bag-verify-screen .x4400-C61RwL {
+  background-color: transparent;
+  color: var(--pixie-powder);
+  font-family: 'Manrope', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  height: 27px;
+  left: 287px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 254px;
+  width: auto;
+}
+.my-bag-verify-screen .x4850-C61RwL {
+  background-color: transparent;
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  height: 19px;
+  left: 260px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 949px;
+  width: 98px;
+}
+.my-bag-verify-screen .x941-KRAbRt {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'SF Pro Text-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+.my-bag-verify-screen .zipcode-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 675px;
+  width: auto;
+}
+.sfprodisplay-regular-normal-white-15px {
+  color: var(--white);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sfprotext-regular-normal-black-22-5px {
+  color: var(--black);
+  font-family: 'SF Pro Text-Regular', Helvetica;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --bon-jour: rgba(223,223,223,1.0);
+  --chicago: rgba(87,87,87,1.0);
+  --coconut: rgba(252,252,254,1.0);
+  --dove-gray: rgba(111,111,111,1.0);
+  --pixie-powder: rgba(53,22,138,1.0);
+  --star-dust: rgba(157,157,157,1.0);
+  --white: rgba(255,255,255,1.0);
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/my-bag-shipping-address-form-filled.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Manrope:400,500,800,700,600|Karla:400,700");
+
+      @font-face {
+        font-family: "SF Pro Display-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5b7d556a58482d00094a3c58/SF-Pro-Display-Regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "SF Pro Text-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/6008a098639e61868d22fa86/fonts/sf-pro-text-regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "SF Pro Display-Semibold";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5ad84aa54ce72e000be60463/SF-Pro-Display-Semibold.otf")
+          format("opentype");
+      }
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="my-bag-shipping-address-form-filled" />
+    <div class="container-center-horizontal">
+      <div class="my-bag-shipping-address-form-filled screen">
+        <div class="status-bar-C61RwL">
+          <img class="frame-ASWxeQ" src="img/frame@2x.svg" />
+          <div class="status-bar-ASWxeQ">
+            <div class="battery-hRp5Ot">
+              <div class="border-NZfiAq">
+                <img class="vector-1yhDCJ" src="img/icons8-identification-documents-error-64-1@2x.png" />
+                <img class="vector-kvzqpa" src="img/vector-108@2x.svg" />
+              </div>
+              <img class="cap-NZfiAq" src="img/cap-35@2x.svg" />
+              <img class="capacity-NZfiAq" src="img/capacity-4@2x.svg" />
+            </div>
+            <img class="wifi-hRp5Ot" src="img/wifi-35@2x.svg" />
+            <img class="cellular-connection-hRp5Ot" src="img/cellular-connection-35@2x.svg" />
+            <div class="time-style-hRp5Ot"><div class="x941-KRAbRt">9:41</div></div>
+          </div>
+        </div>
+        <div class="my-bag-C61RwL valign-text-middle">My Bag</div>
+        <a href="loading-32.html#my-bag-form-filled">
+          <div class="icon-dropdown-C61RwL"><img class="vector-74sJxh" src="img/vector-84@2x.svg" /></div
+        ></a>
+        <div class="shipping-address-C61RwL valign-text-middle karla-bold-black-16px">Shipping Address</div>
+        <div class="rectangle-1674-C61RwL border-1px-bon-jour"></div>
+        <div class="rectangle-1675-C61RwL border-1px-bon-jour"></div>
+        <div class="rectangle-1677-C61RwL border-1px-bon-jour"></div>
+        <div class="rectangle-1676-C61RwL border-1px-bon-jour"></div>
+        <div class="address-C61RwL karla-normal-dove-gray-14px">Address</div>
+        <div class="city-town-C61RwL karla-normal-dove-gray-14px">City/ Town</div>
+        <div class="state-C61RwL karla-normal-dove-gray-14px">State</div>
+        <div class="zipcode-C61RwL karla-normal-dove-gray-14px">Zip code</div>
+        <div class="rectangle-1678-C61RwL border-1px-bon-jour"></div>
+        <div class="appt-C61RwL">Apt #</div>
+        <div class="rectangle-366-C61RwL"></div>
+        <div class="title-C61RwL valign-text-middle">Home</div>
+        <div class="title-VMr6Om valign-text-middle">Sell</div>
+        <div class="title-mzXdH9 valign-text-middle">Alerts</div>
+        <div class="title-QxM5SU valign-text-middle">Profile</div>
+        <div class="group-1520-C61RwL">
+          <div class="group-1517-a1jgCx">
+            <div class="bxbx-home-heart-bAtJAa">
+              <img class="vector-xELxsL" src="img/vector-93@2x.svg" />
+              <img class="vector-QO2k16" src="img/vector-149@2x.svg" />
+            </div>
+            <div class="rinotification-4-line-bAtJAa"><img class="vector-BxIqmZ" src="img/vector-154@2x.svg" /></div>
+            <div class="ggprofile-bAtJAa">
+              <div class="group-bIFxmZ">
+                <img class="vector-Tyykoo" src="img/vector-159@2x.svg" />
+                <img class="vector-lFKl16" src="img/vector-101@2x.svg" />
+              </div>
+            </div>
+            <img class="vector-bAtJAa" src="img/vector-92@2x.svg" />
+          </div>
+        </div>
+        <div class="x123-south-street-C61RwL valign-text-middle karla-normal-black-14px">123 South Street</div>
+        <div class="westfield-C61RwL valign-text-middle karla-normal-black-14px">Westfield</div>
+        <div class="new-jersey-C61RwL valign-text-middle karla-normal-black-14px">New Jersey</div>
+        <div class="x07789-C61RwL valign-text-middle karla-normal-black-14px">07789</div>
+        <div class="mode-light-type-alphabetic-C61RwL">
+          <div class="home-indicator-rxju3E">
+            <div class="home-indicator-63pQQu"></div>
+          </div>
+          <div class="keys-rxju3E">
+            <img class="dictation-sVrOaI" src="img/dictation@2x.svg" />
+            <img class="emoji-sVrOaI" src="img/emoji@2x.svg" />
+            <div class="return-sVrOaI">
+              <img class="rectangle-Dh3wfS" src="img/rectangle@2x.svg" />
+              <div class="label-i320386230373-Dh3wfS">Go</div>
+            </div>
+            <div class="space-sVrOaI">
+              <img class="rectangle-g0kjia" src="img/rectangle-1@2x.svg" />
+              <div class="label-i320386230376-g0kjia">space</div>
+            </div>
+            <div class="x123-sVrOaI">
+              <img class="rectangle-afOPrc" src="img/rectangle-2@2x.svg" />
+              <div class="label-i320386230379-afOPrc">123</div>
+            </div>
+            <div class="delete-sVrOaI">
+              <div class="key-light-tAxFyw">
+                <img class="rectangle-8i0bZ9" src="img/rectangle-3@2x.svg" />
+                <div class="label-i320386230383-8i0bZ9"></div>
+              </div>
+              <img class="delete-button-tAxFyw" src="img/delete-button-1@2x.svg" />
+            </div>
+            <div class="shift-sVrOaI">
+              <div class="key-light-IqmBxj">
+                <div class="rectangle-zu7aNs"></div>
+                <div class="symbol-i320386230396-zu7aNs sfprotext-regular-normal-black-22-5px"></div>
+              </div>
+              <img class="shift-IqmBxj" src="img/shift-1@2x.svg" />
+            </div>
+            <div class="m-sVrOaI">
+              <div class="rectangle-qRDYJD"></div>
+              <div class="symbol-i320386230400-qRDYJD sfprotext-regular-normal-black-22-5px">M</div>
+            </div>
+            <div class="n-sVrOaI">
+              <div class="rectangle-SBmMk6"></div>
+              <div class="symbol-i320386230403-SBmMk6 sfprotext-regular-normal-black-22-5px">N</div>
+            </div>
+            <div class="b-sVrOaI">
+              <div class="rectangle-1xappx"></div>
+              <div class="symbol-i320386230406-1xappx sfprotext-regular-normal-black-22-5px">B</div>
+            </div>
+            <div class="v-sVrOaI">
+              <div class="rectangle-LD1UqN"></div>
+              <div class="symbol-i320386230409-LD1UqN sfprotext-regular-normal-black-22-5px">V</div>
+            </div>
+            <div class="c-sVrOaI">
+              <div class="rectangle-6zFknU"></div>
+              <div class="symbol-i320386230412-6zFknU sfprotext-regular-normal-black-22-5px">C</div>
+            </div>
+            <div class="x-sVrOaI">
+              <div class="rectangle-8yKfQo"></div>
+              <div class="symbol-i320386230415-8yKfQo sfprotext-regular-normal-black-22-5px">X</div>
+            </div>
+            <div class="z-sVrOaI">
+              <div class="rectangle-XBcWyT"></div>
+              <div class="symbol-i320386230418-XBcWyT sfprotext-regular-normal-black-22-5px">Z</div>
+            </div>
+            <div class="l-sVrOaI">
+              <div class="rectangle-DJNF3x"></div>
+              <div class="symbol-i320386230421-DJNF3x sfprotext-regular-normal-black-22-5px">L</div>
+            </div>
+            <div class="k-sVrOaI">
+              <div class="rectangle-65t1xE"></div>
+              <div class="symbol-i320386230424-65t1xE sfprotext-regular-normal-black-22-5px">K</div>
+            </div>
+            <div class="j-sVrOaI">
+              <div class="rectangle-jxWf7s"></div>
+              <div class="symbol-i320386230427-jxWf7s sfprotext-regular-normal-black-22-5px">J</div>
+            </div>
+            <div class="h-sVrOaI">
+              <div class="rectangle-n9CN4q"></div>
+              <div class="symbol-i320386230430-n9CN4q sfprotext-regular-normal-black-22-5px">H</div>
+            </div>
+            <div class="g-sVrOaI">
+              <div class="rectangle-dX8oiQ"></div>
+              <div class="symbol-i320386230433-dX8oiQ sfprotext-regular-normal-black-22-5px">G</div>
+            </div>
+            <div class="f-sVrOaI">
+              <div class="rectangle-bd7zD5"></div>
+              <div class="symbol-i320386230436-bd7zD5 sfprotext-regular-normal-black-22-5px">F</div>
+            </div>
+            <div class="d-sVrOaI">
+              <div class="rectangle-L71GxM"></div>
+              <div class="symbol-i320386230439-L71GxM sfprotext-regular-normal-black-22-5px">D</div>
+            </div>
+            <div class="s-sVrOaI">
+              <div class="rectangle-HSW1Lo"></div>
+              <div class="symbol-i320386230442-HSW1Lo sfprotext-regular-normal-black-22-5px">S</div>
+            </div>
+            <div class="a-sVrOaI">
+              <div class="rectangle-tpUxOQ"></div>
+              <div class="symbol-i320386230445-tpUxOQ sfprotext-regular-normal-black-22-5px">A</div>
+            </div>
+            <div class="p-sVrOaI">
+              <div class="rectangle-mG41Cy"></div>
+              <div class="symbol-i320386230448-mG41Cy sfprotext-regular-normal-black-22-5px">P</div>
+            </div>
+            <div class="o-sVrOaI">
+              <div class="rectangle-JpwRxt"></div>
+              <div class="symbol-i320386230451-JpwRxt sfprotext-regular-normal-black-22-5px">O</div>
+            </div>
+            <div class="i-sVrOaI">
+              <div class="rectangle-ItPsbP"></div>
+              <div class="symbol-i320386230454-ItPsbP sfprotext-regular-normal-black-22-5px">I</div>
+            </div>
+            <div class="u-sVrOaI">
+              <div class="rectangle-CSmgjW"></div>
+              <div class="symbol-i320386230457-CSmgjW sfprotext-regular-normal-black-22-5px">U</div>
+            </div>
+            <div class="y-sVrOaI">
+              <div class="rectangle-jzdBH8"></div>
+              <div class="symbol-i320386230460-jzdBH8 sfprotext-regular-normal-black-22-5px">Y</div>
+            </div>
+            <div class="t-sVrOaI">
+              <div class="rectangle-8FWNRD"></div>
+              <div class="symbol-i320386230463-8FWNRD sfprotext-regular-normal-black-22-5px">T</div>
+            </div>
+            <div class="r-sVrOaI">
+              <div class="rectangle-h2dvsT"></div>
+              <div class="symbol-i320386230466-h2dvsT sfprotext-regular-normal-black-22-5px">R</div>
+            </div>
+            <div class="e-sVrOaI">
+              <div class="rectangle-mcoelf"></div>
+              <div class="symbol-i320386230469-mcoelf sfprotext-regular-normal-black-22-5px">E</div>
+            </div>
+            <div class="w-sVrOaI">
+              <div class="rectangle-w8gwvV"></div>
+              <div class="symbol-i320386230472-w8gwvV sfprotext-regular-normal-black-22-5px">W</div>
+            </div>
+            <div class="q-sVrOaI">
+              <div class="rectangle-5VLn8v"></div>
+              <div class="symbol-i320386230475-5VLn8v sfprotext-regular-normal-black-22-5px">Q</div>
+            </div>
+          </div>
+        </div>
+        <a href="my-bag-verify-screen.html">
+          <div class="button-primary-default-C61RwL">
+            <a href="my-bag-verify-screen.html" onclick="window.event.stopPropagation()"
+              ><img class="button-primary-default-GsrA0Q" src="img/button-primary-default@2x.svg"
+            /></a>
+            <div class="button-text-i4023326981537-GsrA0Q">Next</div>
+          </div></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

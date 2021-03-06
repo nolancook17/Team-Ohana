@@ -1,0 +1,207 @@
+/* screen - thank-you-purchase-modal */
+
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+.karla-bold-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-bold-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-normal-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-dove-gray-14px {
+  color: var(--dove-gray);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-pixie-powder-14px {
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-star-dust-14px {
+  color: var(--star-dust);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-white-16px {
+  color: var(--white);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sfprodisplay-regular-normal-white-15px {
+  color: var(--white);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sfprotext-regular-normal-black-22-5px {
+  color: var(--black);
+  font-family: 'SF Pro Text-Regular', Helvetica;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 400;
+}
+.thank-you-purchase-modal {
+  background-color: transparent;
+  height: 236px;
+  overflow-x: hidden;
+  position: relative;
+  width: 287px;
+}
+.thank-you-purchase-modal .claritysuccess-line-fMpJGJ {
+  background-color: transparent;
+  height: 31px;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  width: 31px;
+}
+.thank-you-purchase-modal .group-1601-C61RwL {
+  background-color: transparent;
+  height: 51px;
+  left: 119px;
+  position: absolute;
+  top: 35px;
+  width: 52px;
+}
+.thank-you-purchase-modal .group-C61RwL {
+  background-color: transparent;
+  height: 248px;
+  left: -6px;
+  position: absolute;
+  top: -3px;
+  width: 299px;
+}
+.thank-you-purchase-modal .ic-clear-24px-C61RwL {
+  background-color: transparent;
+  height: 14px;
+  left: 259px;
+  position: absolute;
+  top: 21px;
+  width: 14px;
+}
+.thank-you-purchase-modal .loading-container-4ACwKv {
+  background-color: transparent;
+  height: 53px;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 53px;
+}
+.thank-you-purchase-modal .loading-fMpJGJ {
+  background-color: transparent;
+  height: 51px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 52px;
+}
+.thank-you-purchase-modal .loading-fill-4ACwKv {
+  background-color: transparent;
+  height: 53px;
+  left: 25px;
+  position: absolute;
+  top: -1px;
+  width: 28px;
+}
+.thank-you-purchase-modal .loading-fill-F36fVR {
+  background-color: transparent;
+  height: 53px;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 28px;
+}
+.thank-you-purchase-modal .span0-DsVkcH {
+  color: rgba(0,0,0,1.0);
+  font-style: normal;
+  letter-spacing: 0.00px;
+}
+.thank-you-purchase-modal .span1-DsVkcH {
+  color: rgba(0,0,0,1.0);
+  font-style: normal;
+}
+.thank-you-purchase-modal .thank-you-for-s-g-with-poshmark-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Manrope', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 24px;
+  line-height: normal;
+  position: absolute;
+  top: 111px;
+  width: 244px;
+}
+.thank-you-purchase-modal .vector-m0Gmut {
+  background-color: transparent;
+  height: 19px;
+  left: 2px;
+  position: absolute;
+  top: 6px;
+  width: 27px;
+}
+.thank-you-purchase-modal .your-order-has-t-to-your-email-C61RwL {
+  background-color: transparent;
+  color: rgba(112,112,112,1.0);
+  font-family: 'Karla', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: 28px;
+  left: 8px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 171px;
+  width: 278px;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --bon-jour: rgba(223,223,223,1.0);
+  --chicago: rgba(87,87,87,1.0);
+  --coconut: rgba(252,252,254,1.0);
+  --dove-gray: rgba(111,111,111,1.0);
+  --pixie-powder: rgba(53,22,138,1.0);
+  --star-dust: rgba(157,157,157,1.0);
+  --white: rgba(255,255,255,1.0);
+}

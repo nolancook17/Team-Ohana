@@ -1,0 +1,248 @@
+/* screen - mensbrands */
+
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+.karla-bold-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-bold-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.karla-normal-black-14px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-black-16px {
+  color: var(--black);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-dove-gray-14px {
+  color: var(--dove-gray);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-pixie-powder-14px {
+  color: var(--pixie-powder);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-star-dust-14px {
+  color: var(--star-dust);
+  font-family: 'Karla', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.karla-normal-white-16px {
+  color: var(--white);
+  font-family: 'Karla', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.mensbrands {
+  background-color: var(--white);
+  height: 96px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 508px;
+}
+.mensbrands .adidas-ag-icon-0-A3zzfQ {
+  background-color: transparent;
+  height: 92px;
+  left: -6px;
+  object-fit: cover;
+  position: absolute;
+  top: -5px;
+  width: 95px;
+}
+.mensbrands .champion-icon-0-pZT9M8 {
+  background-color: transparent;
+  height: 92px;
+  left: -6px;
+  object-fit: cover;
+  position: absolute;
+  top: -5px;
+  width: 95px;
+}
+.mensbrands .frame-5-C61RwL {
+  background-color: var(--white);
+  border-radius: 12.982934951782227px;
+  box-shadow: 0px 1.1802668571472168px 5.901334285736084px rgba(40,39,123,0.22);;
+  height: 79px;
+  left: 115px;
+  position: absolute;
+  top: 8px;
+  width: 83px;
+}
+.mensbrands .frame-6-C61RwL {
+  background-color: var(--white);
+  border-radius: 12.982934951782227px;
+  box-shadow: 0px 1.1802668571472168px 5.901334285736084px rgba(40,39,123,0.22);;
+  height: 79px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  width: 83px;
+}
+.mensbrands .group-1553-C61RwL {
+  background-color: transparent;
+  height: 79px;
+  left: 311px;
+  position: absolute;
+  top: 8px;
+  width: 83px;
+}
+.mensbrands .group-1554-C61RwL {
+  background-color: transparent;
+  height: 79px;
+  left: 213px;
+  position: absolute;
+  top: 8px;
+  width: 83px;
+}
+.mensbrands .group-1555-C61RwL {
+  background-color: transparent;
+  height: 79px;
+  left: 409px;
+  position: absolute;
+  top: 8px;
+  width: 83px;
+}
+.mensbrands .group-1568-pqQuwH {
+  background-color: transparent;
+  height: 28px;
+  left: 9px;
+  position: absolute;
+  top: 26px;
+  width: 64px;
+}
+.mensbrands .layer1-dlCEa5 {
+  background-color: transparent;
+  height: 52px;
+  left: 16px;
+  position: relative;
+  top: 14px;
+  width: 51px;
+}
+.mensbrands .louis-vuitton-logo-C61RwL {
+  background-color: transparent;
+  height: 55px;
+  left: 231px;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  width: 45px;
+}
+.mensbrands .path855-tzHqwE {
+  background-color: transparent;
+  height: 31px;
+  left: 4px;
+  position: absolute;
+  top: 22px;
+  width: 45px;
+}
+.mensbrands .vans-icon-0-IEW2FF {
+  background-color: transparent;
+  height: 92px;
+  left: -7px;
+  object-fit: cover;
+  position: absolute;
+  top: -5px;
+  width: 96px;
+}
+.mensbrands .vector-Aip7EY {
+  background-color: transparent;
+  height: 12px;
+  left: 12px;
+  position: absolute;
+  top: -0px;
+  width: 11px;
+}
+.mensbrands .vector-BG1EwY {
+  background-color: transparent;
+  height: 12px;
+  left: 48px;
+  position: absolute;
+  top: -1px;
+  width: 3px;
+}
+.mensbrands .vector-PQxdHO {
+  background-color: transparent;
+  height: 12px;
+  left: -0px;
+  position: absolute;
+  top: -1px;
+  width: 12px;
+}
+.mensbrands .vector-TqcGhk {
+  background-color: transparent;
+  height: 12px;
+  left: 23px;
+  position: absolute;
+  top: -1px;
+  width: 12px;
+}
+.mensbrands .vector-tzHqwE {
+  background-color: transparent;
+  height: 12px;
+  left: 35px;
+  position: absolute;
+  top: -1px;
+  width: 12px;
+}
+.mensbrands .x000000ff-1WFRrO {
+  background-color: transparent;
+  height: 54px;
+  left: -0px;
+  position: absolute;
+  top: 1px;
+  width: 46px;
+}
+.sfprodisplay-regular-normal-white-15px {
+  color: var(--white);
+  font-family: 'SF Pro Display-Regular', Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.sfprotext-regular-normal-black-22-5px {
+  color: var(--black);
+  font-family: 'SF Pro Text-Regular', Helvetica;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --black: rgba(0,0,0,1.0);
+  --bon-jour: rgba(223,223,223,1.0);
+  --chicago: rgba(87,87,87,1.0);
+  --coconut: rgba(252,252,254,1.0);
+  --dove-gray: rgba(111,111,111,1.0);
+  --pixie-powder: rgba(53,22,138,1.0);
+  --star-dust: rgba(157,157,157,1.0);
+  --white: rgba(255,255,255,1.0);
+}

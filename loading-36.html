@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/loading-36.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Manrope:400,500,800,700,600|Karla:400,700");
+
+      @font-face {
+        font-family: "SF Pro Display-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5b7d556a58482d00094a3c58/SF-Pro-Display-Regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "SF Pro Text-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/6008a098639e61868d22fa86/fonts/sf-pro-text-regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "SF Pro Display-Semibold";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/5ad84aa54ce72e000be60463/SF-Pro-Display-Semibold.otf")
+          format("opentype");
+      }
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="loading-36" />
+    <div class="container-center-horizontal">
+      <div class="loading-36 screen" onclick="window.open('loading-32.html%23loading-32', '_self');">
+        <img class="ellipse-46-C61RwL" src="img/ellipse-46-24@1x.svg" />
+        <div class="home-indicator-C61RwL">
+          <div class="phone-indicator-black-BJ28qq">
+            <div class="container-UILJPw"></div>
+            <div class="indicator-UILJPw"></div>
+          </div>
+        </div>
+        <img class="poshmark-logo-white-36-C61RwL" src="img/poshmark-logo-white-36-7@2x.svg" />
+        <div class="entering-store-C61RwL valign-text-middle karla-normal-white-16px">Entering Store.</div>
+        <div class="status-bar-C61RwL">
+          <div class="status-bar-ASWxeQ">
+            <div class="container-hRp5Ot"></div>
+            <div class="right-side-hRp5Ot">
+              <div class="battery-e7uhAr">
+                <div class="border-PqAHMl border-1px-white"></div>
+                <img class="cap-PqAHMl" src="img/cap@2x.svg" />
+                <div class="capacity-PqAHMl"></div>
+              </div>
+              <img class="wifi-e7uhAr" src="img/wifi-19@2x.svg" />
+              <img class="cellular-connection-e7uhAr" src="img/cellular-connection-28@2x.svg" />
+            </div>
+            <div class="time-hRp5Ot sfprodisplay-regular-normal-white-15px">
+              <span class="span0-5CjaE0">09:4</span><span class="span1-5CjaE0">6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
